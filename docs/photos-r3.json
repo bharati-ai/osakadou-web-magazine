@@ -1,0 +1,66 @@
+{
+  "season-spring": {
+    "best": { "id": "1648945740653-b0074db98bff", "w": 5472, "h": 3648, "alt_ja": "川沿いの桜並木の下を歩く人々の後ろ姿", "caption_ja": "大阪市内の川沿いの桜並木（大阪市）", "by": "Yasuto Takeuchi", "page": "https://unsplash.com/photos/J0ADq9-lj2c", "osaka": true, "notes": "撮影地はページのタグ「osaka city」のみ（location欄なし）。大川・毛馬桜之宮公園付近に見えるが未確認のため、地名は入れない。人物は小さく後ろ姿中心で、右端の1名はマスクをした横顔。" },
+    "backup": { "id": "1680061337399-a175cebe51b1", "w": 4608, "h": 3072, "alt_ja": "満開の桜越しに見る大阪城天守閣", "caption_ja": "大阪城公園（中央区）", "by": "fumiko nishida", "page": "https://unsplash.com/photos/BZ9aSxEJXcc", "osaka": true, "notes": "location: osaka castle and osaka castle park。人物なし。大阪城は他のスロットと重複しやすいので、同一ページで使い過ぎないこと。" }
+  },
+  "season-summer": {
+    "best": { "id": "1692546699056-d4c6c7c1829e", "w": 3888, "h": 5184, "alt_ja": "夜空に開く花火と見物客のシルエット", "caption_ja": "大阪の夏の花火（大阪）", "by": "YANGHONG YU", "page": "https://unsplash.com/photos/YnlDL7y72vY", "osaka": true, "notes": "縦位置（条件を満たす横位置の夏写真は見つからなかった）。撮影地はタグ「osaka」のみで、大会名は不明。見物客は黒いシルエットで顔は写っていない。" },
+    "backup": { "id": "1690210683945-4a49d65017ee", "w": 2955, "h": 4433, "alt_ja": "天神祭の夜、法被や浴衣姿で集まる人々", "caption_ja": "天神祭（北区・天神橋）", "by": "Steven Marcellino", "page": "https://unsplash.com/photos/Yqx1m_sXT5I", "osaka": true, "notes": "location: Tenjinbashi, Kita Ward, Osaka。縦位置。群衆の中に小さな横顔がある。大きく使う場合は顔が判別できないか確認すること。" }
+  },
+  "season-winter": {
+    "best": { "id": "1761292421196-362ca7eeee66", "w": 3089, "h": 2048, "alt_ja": "イルミネーションが灯る並木道を歩く人々の後ろ姿", "caption_ja": "大阪市内の冬のイルミネーション（大阪市）", "by": "Margarita B", "page": "https://unsplash.com/photos/CvWlx9QotWk", "osaka": true, "notes": "location: Osaka, Japan。御堂筋か中之島かは未確認なので、通り名は書かない。フィルム調で解像度はやや低め（長辺3089px）。人物は暗い後ろ姿。" },
+    "backup": { "id": "1675002562047-e3e4e4abb3d1", "w": 4000, "h": 6000, "alt_ja": "梅田に飾られた大きなクリスマスツリー", "caption_ja": "梅田のクリスマスツリー（北区）", "by": "Steven Marcellino", "page": "https://unsplash.com/photos/6t54IJpHjQg", "osaka": true, "notes": "location: Umeda, Kita Ward, Osaka。縦位置。施設名は特定できない。下部の人物は暗いシルエット。" }
+  },
+  "wx-rain": {
+    "best": { "id": "1791777831346-c140a0d33aba", "w": 3361, "h": 2241, "alt_ja": "雨の街角を傘をさして歩く人の後ろ姿", "caption_ja": "雨の日の大阪の街角（大阪市）", "by": "Wenhao Ruan", "page": "https://unsplash.com/photos/MTXeBdcfKZc", "osaka": true, "notes": "location: Osaka, Japan。人物は後ろ姿のみ。目立つ看板はなく、薬局の看板もない。" },
+    "backup": { "id": "1701343199698-2c9f4f4d1ad8", "w": 3840, "h": 1774, "alt_ja": "雨に濡れた歩道を傘をさして歩く人々の後ろ姿", "caption_ja": "雨の大阪の通り（大阪市）", "by": "Hongwei FAN", "page": "https://unsplash.com/photos/Wm-mu5hnatQ", "osaka": true, "notes": "location: Osaka, Japan。約2.2:1の超横長なので4:5には切れない。帯状のレイアウト向き。遠景に小さな店舗看板があるが、薬局はない。" }
+  },
+  "wx-clear": {
+    "best": { "id": "1765434565396-ee7b5a7abc4a", "w": 9504, "h": 6336, "alt_ja": "晴れた空の下に広がる大阪の街並みと生駒の山並み", "caption_ja": "晴天の大阪市街（大阪市）", "by": "Hat Trick", "page": "https://unsplash.com/photos/rkevd6e1j9M", "osaka": true, "notes": "location: Osaka, Japan。高所から東を望む眺めで、あべのハルカスからと思われるが未確認。高解像度。人物とロゴはない。" },
+    "backup": { "id": "1591537644972-95b643c662a8", "w": 4021, "h": 3015, "alt_ja": "青空の下、水辺の向こうに並ぶビル群", "caption_ja": "青空と水辺の大阪のスカイライン（大阪）", "by": "D Konishi", "page": "https://unsplash.com/photos/Mz-T8jnhXuI", "osaka": true, "notes": "location: Osaka, 大阪府。河川か湾岸かは未確認。空の面積が広いので、見出しの文字を重ねやすい。" }
+  },
+  "wx-cloudy": {
+    "best": { "id": "1588293595084-46d6e5347982", "w": 5000, "h": 2814, "alt_ja": "曇り空の下の川とビル群", "caption_ja": "曇天の大阪の川辺（大阪市）", "by": "Ryo Harianto", "page": "https://unsplash.com/photos/BSdOcY0lOR8", "osaka": true, "notes": "location: Osaka, Japan。川の名前は未確認。人物とロゴはない。" },
+    "backup": { "id": "1756460886147-1804661e8a0f", "w": 7728, "h": 5152, "alt_ja": "霞がかった大阪の高層ビル群", "caption_ja": "霞む大阪のスカイライン（大阪市）", "by": "Cuvii", "page": "https://unsplash.com/photos/_PxRc1TT47g", "osaka": true, "notes": "location: Osaka, Japan。左側のビルに企業ロゴ「THK」が写るので、左を詰めてクロップすること。同じ撮影者の Axxs183UK1I は「大阪回生病院」の看板が写るため除外した。" }
+  },
+  "sento": {
+    "best": { "id": "1786343453481-3e53d1aa7108", "w": 4032, "h": 6048, "alt_ja": "木の浴槽と洗い場のある、人のいない浴室", "caption_ja": "木の浴槽のある浴室（イメージ）", "by": "Fidel Fernando", "page": "https://unsplash.com/photos/X7NzByz9bdI", "osaka": false, "notes": "撮影地の記載なし。銭湯ではなく、旅館や個室の浴室と思われる。縦位置。棚のボトルのラベルは小さい。" },
+    "backup": { "id": "1764057145833-8baa3efbe58f", "w": 6000, "h": 4000, "alt_ja": "湯もみ板が置かれた木造の大きな湯船", "caption_ja": "草津温泉の湯船（群馬県草津町・イメージ）", "by": "waa towaw", "page": "https://unsplash.com/photos/a1j-oEhGdb8", "osaka": false, "notes": "location: 群馬県草津町（湯畑）。大阪の写真ではない。右上の端に人物の赤い衣装が一部写るので、右上を切ること。のれん付きの銭湯外観は、条件を満たすものが見つからなかった。" }
+  },
+  "run-river": {
+    "best": { "id": "1591537645006-47ece459f6a7", "w": 4160, "h": 3120, "alt_ja": "青空の下、川沿いの芝生の土手と遠くのビル群", "caption_ja": "大阪市内の河川敷（大阪市）", "by": "D Konishi", "page": "https://unsplash.com/photos/JLZVuUoK8zM", "osaka": true, "notes": "location: 大阪市。淀川の河川敷のように見えるが、川の名前は未確認。人物と自転車は左端に小さく写る程度。" },
+    "backup": { "id": "1648945741044-4dfc68dc38f2", "w": 5472, "h": 3648, "alt_ja": "桜の咲く川沿いの散歩道", "caption_ja": "大阪市内の川沿いの散歩道（大阪市）", "by": "Yasuto Takeuchi", "page": "https://unsplash.com/photos/A9bMRQ4IfqY", "osaka": true, "notes": "タグ「osaka city」のみ。桜の季節の写真なので、季節を問わない用途には不向き。season-spring の best と同じ撮影者・同じ場所。" }
+  },
+  "sleep": {
+    "best": { "id": "1764867248357-f1d63647bff3", "w": 4275, "h": 2814, "alt_ja": "夕方の光が差し込む寝室のベッド", "caption_ja": "やわらかな光の寝室（イメージ）", "by": "Efe Kekikciler", "page": "https://unsplash.com/photos/WD6HSPOIgSk", "osaka": false, "notes": "撮影地の記載なし。人物はいない。掛け布団に目のモチーフの柄がある。" },
+    "backup": { "id": "1779364867798-386fb7213a2c", "w": 3869, "h": 5804, "alt_ja": "朝日が差し込む白いベッドとフロアランプ", "caption_ja": "朝の光の寝室（イメージ）", "by": "Ксения Лапшина", "page": "https://unsplash.com/photos/CREKZID5kbw", "osaka": false, "notes": "location: Moscow, Russia。縦位置。人物はいない。白基調。" }
+  },
+  "water": {
+    "best": { "id": "1723510044911-68fdbdc64f46", "w": 3000, "h": 2000, "alt_ja": "テーブルに置かれた一杯の水", "caption_ja": "一杯の水（イメージ）", "by": "Michael Kahn", "page": "https://unsplash.com/photos/3ZQfESvUeK0", "osaka": false, "notes": "撮影地の記載なし。タグは glass / water / table / evening。青と暖色の光。" },
+    "backup": { "id": "1612375066516-11d6d394bd2a", "w": 2560, "h": 3200, "alt_ja": "窓辺のテーブルに置かれた水のグラス", "caption_ja": "窓辺の一杯の水（イメージ）", "by": "Mateusz Butkiewicz", "page": "https://unsplash.com/photos/jNk0_Bpd_xw", "osaka": false, "notes": "撮影地の記載なし。縦位置。Giorgio Trovato の水グラス写真は、ページのタグに alcohol が含まれるため除外した。" }
+  },
+  "map-aerial": {
+    "best": { "id": "1769307530595-3edcfc022f49", "w": 9504, "h": 6336, "alt_ja": "夕暮れの大阪の密集した街並みと通天閣を見下ろす", "caption_ja": "高所から見た大阪の街並み（大阪市）", "by": "Hat Trick", "page": "https://unsplash.com/photos/wGo4oBb5s8g", "osaka": true, "notes": "location: Osaka, Japan。画面下部に通天閣が見えるので、あべのハルカスから北西を見た眺めと思われる（未確認）。高解像度。" },
+    "backup": { "id": "1597959737184-ba65df19be44", "w": 6000, "h": 4000, "alt_ja": "夜の天王寺・新世界の街並みと光る通天閣の俯瞰", "caption_ja": "天王寺の夜景（天王寺区）", "by": "Paul Cuoco", "page": "https://unsplash.com/photos/8NwBELnFYHg", "osaka": true, "notes": "location: Tennoji, Osaka。夜景。通天閣は浪速区にあるので、キャプションの区名は撮影地（天王寺）を基準にしている。" }
+  },
+  "shrine": {
+    "best": { "id": "1695155441444-05c08368a68b", "w": 9040, "h": 6027, "alt_ja": "住吉大社の本殿と朱色の瑞垣", "caption_ja": "住吉大社（住吉区）", "by": "Pourya Gohari", "page": "https://unsplash.com/photos/hKDo41JKvZc", "osaka": true, "notes": "location: Sumiyoshi, Sumiyoshi Ward, Osaka。参拝者が1人、小さく写る。高解像度。" },
+    "backup": { "id": "1695155394703-63279dec2cd4", "w": 9214, "h": 6143, "alt_ja": "住吉大社の反橋（太鼓橋）と水面の映り込み", "caption_ja": "住吉大社の反橋（住吉区）", "by": "Pourya Gohari", "page": "https://unsplash.com/photos/Zhw4rB-K9Ko", "osaka": true, "notes": "best と同じ神社。別の神社にしたい場合は、難波八阪神社の獅子殿（photo-1678731714027-5a231a95fd23、浪速区、縦位置、検証済み）を使う。" }
+  },
+  "market": {
+    "best": { "id": "1584583528653-966964d48bf1", "w": 4685, "h": 2933, "alt_ja": "黒門市場のアーケードと買い物客", "caption_ja": "黒門市場（中央区）", "by": "Helga Christina", "page": "https://unsplash.com/photos/TuIKSIbZqic", "osaka": true, "notes": "location: Kuromon Market, Chuo Ward, Osaka。中景に数人の顔が小さく写る（マスク着用者を含む）。店名の看板は中程度の大きさ。薬局の看板はない。冬服。" },
+    "backup": { "id": "1768906964003-c45ebcf419ff", "w": 5719, "h": 3813, "alt_ja": "黒門市場の入口とカラフルな日よけ", "caption_ja": "黒門市場の入口（中央区）", "by": "Da-shika", "page": "https://unsplash.com/photos/1jGrxd3dSyk", "osaka": true, "notes": "location: 大阪市中央区日本橋2丁目 黒門市場。右側のビルに「大丸白衣」の縦看板がある（白衣の店で、薬局ではない）。気になる場合は右側を詰める。人物は小さい。" }
+  },
+  "takoyaki": {
+    "best": { "id": "1771308458012-e60e667bbddf", "w": 8192, "h": 5464, "alt_ja": "鉄板でたこ焼きを返す職人の手元", "caption_ja": "たこ焼きを焼く手元（イメージ）", "by": "Jason Leung", "page": "https://unsplash.com/photos/9MQQXUQIDys", "osaka": false, "notes": "撮影地の記載なし。顔は写っておらず、手元だけ。高解像度。" },
+    "backup": { "id": "1701694492928-fd5919cfcb5e", "w": 3800, "h": 2534, "alt_ja": "竹串でたこ焼きを返す手元", "caption_ja": "たこ焼きを焼く手元（イメージ）", "by": "Hardingferrent", "page": "https://unsplash.com/photos/ZcEZY6jyHXI", "osaka": false, "notes": "location: インドネシア・ジャカルタ。大阪の写真ではないので、必ずイメージ扱いにする。顔は写っていない。" }
+  },
+  "station": {
+    "best": { "id": "1740214784411-e41039c5f95e", "w": 6192, "h": 4128, "alt_ja": "Osaka Metroの乗換案内の下、階段を上る通勤客の後ろ姿", "caption_ja": "Osaka Metro の駅構内（大阪市）", "by": "Sam", "page": "https://unsplash.com/photos/ynKe-FPkVj0", "osaka": true, "notes": "タグは japan / osaka / metro。案内板に中央線・四つ橋線の乗換と出口28番が表示されているので本町駅と思われるが、確定ではない。人物は後ろ姿。" },
+    "backup": { "id": "1789664027098-7cf9cbbc068d", "w": 2625, "h": 3500, "alt_ja": "赤い帯の電車の前を足早に通り過ぎる人（ブレ）", "caption_ja": "地下鉄ホームの日常（大阪市）", "by": "Zoltan Fekeshazy", "page": "https://unsplash.com/photos/jsm4L6PZzU4", "osaka": true, "notes": "location: Osaka, Japan。縦位置。人物はブレで顔は判別できない。赤い帯の車両なので御堂筋線と思われるが、未確認。" }
+  },
+  "sumo": {
+    "best": { "id": "1774014045694-a992783529e1", "w": 7728, "h": 5152, "alt_ja": "満員の観客に囲まれた土俵と吊り屋根", "caption_ja": "大相撲大阪場所の会場（浪速区・イメージ）", "by": "Harman Tatla", "page": "https://unsplash.com/photos/SKoyS6Db6B4", "osaka": true, "notes": "location: Osaka, Japan。左上に EDION の看板が見えるので、エディオンアリーナ大阪（大阪府立体育会館）と判断した。力士はごく小さく、顔は判別できない。左上のロゴはクロップで外せる。" },
+    "backup": { "id": "1774014045695-7adba115441e", "w": 7728, "h": 5152, "alt_ja": "土俵上の取組と満員の観客席", "caption_ja": "大相撲大阪場所の会場（浪速区・イメージ）", "by": "Harman Tatla", "page": "https://unsplash.com/photos/wZaToYyb0Fk", "osaka": true, "notes": "best と同じ撮影者・同じ構図の別カット（取組の瞬間が違うだけ）。府立体育会館の幟の写真は見つからなかった。" }
+  }
+}

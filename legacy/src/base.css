@@ -1,0 +1,16 @@
+:root{
+  --paper:#F7F7F4; --paper-2:#EEEEE9; --card:#FDFDFB;
+  --ink:#1C2433; --ink-2:#4A5263; --line:#D9DAD5;
+  --shu:#B8391F; --on-shu:#FFFFFF;
+  --mincho:"Noto Serif JP","Hiragino Mincho ProN","Yu Mincho",YuMincho,serif;
+  --gothic:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP","Noto Sans CJK JP","Yu Gothic Medium","YuGothic Medium","Yu Gothic",YuGothic,Meiryo,sans-serif;
+  --mincho-sys:"Hiragino Mincho ProN","Yu Mincho",YuMincho,"Noto Serif CJK JP",serif;
+  --latin:"Bodoni Moda","Noto Serif JP",serif;
+  --wrap:1200px; --gut:clamp(16px,4vw,40px); --r:2px;
+  color-scheme:light dark;
+}
+@media (prefers-color-scheme:dark){:root{
+  --paper:#14181F; --paper-2:#1A1F28; --card:#1E2430;
+  --ink:#ECEDEA; --ink-2:#A9B0BC; --line:#2E3542;
+  --shu:#F2765C; --on-shu:#14181F;
+}}

@@ -1,0 +1,7 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "osakalive-next", "runtimeExecutable": "npm", "runtimeArgs": ["run", "dev", "--", "--port", "3100"], "port": 3100 },
+    { "name": "osakalive-legacy", "runtimeExecutable": "python", "runtimeArgs": ["-m", "http.server", "5178", "--directory", "D:/Projects/Osakadou.live/legacy"], "port": 5178 }
+  ]
+}

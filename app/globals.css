@@ -1,0 +1,132 @@
+@import "tailwindcss";
+@import "./article.css";
+
+/* Tokens: paper + 藍墨 ink + one 朱 accent. Light/dark swap via CSS variables. */
+:root {
+  --paper: #f7f7f4;
+  --paper-2: #eeeee9;
+  --band: #fcefea; /* light 朱 wash for alternating bands (OSAKA-INFO style) */
+  --card: #fdfdfb;
+  --ink: #1c2433;
+  --ink-2: #4a5263;
+  --line: #d9dad5;
+  --line-strong: #8a8f98; /* form controls: ≥3:1 non-text contrast */
+  --shu: #b8391f;
+  --shu-ink: #a3321b;
+  --on-shu: #ffffff;
+  --wagara: url("/wagara/seigaiha-light.svg");
+  --wagara-band: url("/wagara/seigaiha-band.svg");
+  /* constant in both themes: photo overlays and the footer */
+  --night: #121821;
+  --on-night: #f3f3ef;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #14181f;
+    --paper-2: #1a1f28;
+    --band: #22191a;
+    --card: #1e2430;
+    --ink: #ecedea;
+    --ink-2: #a9b0bc;
+    --line: #2e3542;
+    --line-strong: #6b7383;
+    --shu: #f2765c;
+    --shu-ink: #f2765c;
+    --on-shu: #14181f;
+    --wagara: url("/wagara/seigaiha-dark.svg");
+    --wagara-band: url("/wagara/seigaiha-dark.svg");
+  }
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-2: var(--paper-2);
+  --color-band: var(--band);
+  --color-card: var(--card);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-shu: var(--shu);
+  --color-shu-ink: var(--shu-ink);
+  --color-on-shu: var(--on-shu);
+  --color-night: var(--night);
+  --color-on-night: var(--on-night);
+  --font-sans: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", "Yu Gothic Medium", "Yu Gothic", Meiryo, "Noto Sans JP", sans-serif;
+  /* no undefined var() here: it would invalidate the whole declaration and drop Zen Maru */
+  --font-maru: var(--font-zen-maru), "Hiragino Maru Gothic ProN", var(--font-sans);
+  --font-latin: var(--font-bodoni), serif;
+  --font-mincho: var(--font-noto-serif), "Hiragino Mincho ProN", "Yu Mincho", serif;
+  /* shape rule: cards 14px, chips 6px, buttons/tabs full pill */
+  --radius-card: 14px;
+  --radius-chip: 6px;
+  --shadow-hard: 5px 5px 0 var(--line);
+  --shadow-hard-shu: 5px 5px 0 var(--shu);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 76px;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.04em;
+    line-break: strict;
+    overflow-wrap: anywhere;
+  }
+  /* No keep-all: without auto-phrase (Safari/Firefox) it leaves only emergency breaks that ignore kinsoku. */
+  h1, h2, h3, h4 {
+    line-height: 1.45;
+    overflow-wrap: break-word;
+    text-wrap: balance;
+  }
+  @supports (word-break: auto-phrase) {
+    h1, h2, h3, h4, .phrase { word-break: auto-phrase; }
+  }
+  p { text-wrap: pretty; }
+  :focus-visible { outline: 2px solid var(--shu); outline-offset: 3px; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+    .wx-rain, .wx-snow, .wx-sun, .wx-stars { animation: none !important; }
+  }
+}
+
+@layer components {
+  .wrap { width: 100%; max-width: 1200px; margin-inline: auto; padding-inline: clamp(16px, 4vw, 40px); }
+  .nw { white-space: nowrap; }
+  .wagara-strip { height: 28px; background: var(--wagara) repeat-x left bottom / 40px 20px; }
+  .card-hard { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-card); box-shadow: var(--shadow-hard); }
+  .tate { writing-mode: vertical-rl; text-orientation: mixed; }
+
+  /* live-weather sky layers (decorative, frozen under reduced motion) */
+  .wx-rain {
+    background-image: repeating-linear-gradient(105deg, transparent 0 14px, rgb(255 255 255 / 0.18) 14px 15px, transparent 15px 34px);
+    background-size: 200px 200px;
+    animation: wx-fall 0.9s linear infinite;
+  }
+  .wx-snow {
+    background-image: radial-gradient(circle, rgb(255 255 255 / 0.85) 0 2px, transparent 3px), radial-gradient(circle, rgb(255 255 255 / 0.6) 0 1.5px, transparent 2.5px);
+    background-size: 90px 90px, 60px 60px;
+    background-position: 0 0, 30px 40px;
+    animation: wx-fall 6s linear infinite;
+  }
+  .wx-sun { background: radial-gradient(circle, rgb(255 236 170 / 0.9), rgb(255 214 120 / 0.35) 45%, transparent 70%); animation: wx-glow 6s ease-in-out infinite alternate; }
+  .wx-stars {
+    background-image: radial-gradient(circle, rgb(255 255 255 / 0.9) 0 1px, transparent 1.5px), radial-gradient(circle, rgb(255 255 255 / 0.6) 0 1px, transparent 1.5px);
+    background-size: 120px 120px, 77px 77px;
+    background-position: 10px 20px, 50px 60px;
+    animation: wx-twinkle 4s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes wx-fall { to { background-position: -40px 200px, -20px 240px; } }
+@keyframes wx-glow { to { transform: scale(1.08); opacity: 0.85; } }
+@keyframes wx-twinkle { to { opacity: 0.55; } }

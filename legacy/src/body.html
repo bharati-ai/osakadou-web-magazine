@@ -1,0 +1,347 @@
+<a class="skip" href="#main">本文へ移動</a>
+<header class="hd">
+  <div class="wrap">
+    <a class="logo" href="#top"><b>OSAKA LIVE</b><small>大阪の暮らしマガジン</small></a>
+    <nav aria-label="セクション">
+      <a href="#areas"><span>01</span>エリア</a>
+      <a href="#unwell"><span>02</span>相談先</a>
+      <a href="#calendar"><span>03</span>カレンダー</a>
+      <a href="#checklist"><span>04</span>チェックリスト</a>
+      <a href="#themes"><span>05</span>連載</a>
+    </nav>
+    <button class="toc-btn" id="toc-open" type="button" aria-haspopup="dialog" aria-controls="toc">目次</button>
+  </div>
+  <div class="progress" aria-hidden="true"></div>
+</header>
+
+<dialog class="toc" id="toc" aria-labelledby="toc-title">
+  <div class="toc-in">
+    <div class="toc-head">
+      <p id="toc-title" class="en toc-title" lang="en">Contents</p>
+      <button class="toc-close" id="toc-close" type="button" aria-label="目次を閉じる">×</button>
+    </div>
+    <nav aria-label="目次" id="toc-nav"></nav>
+  </div>
+</dialog>
+
+<main id="main">
+<section class="cover" id="top">
+  <div class="wrap">
+    <div class="cover-top">
+      <p class="masthead" lang="en">OSAKA LIVE</p>
+      <p class="issue">創刊準備号<span class="en" lang="en">Autumn 2026</span></p>
+      <p class="deck"><span class="deck-lead">大阪で、暮らす。</span>住む人の<wbr>目線で、<wbr>出典を<wbr>明記して<wbr>書く<wbr>Webマガジン。</p>
+    </div>
+    <div class="cover-body">
+      <figure class="cover-photo">
+        <div class="ph">{{img:hero}}</div>
+        <figcaption>黄葉の大阪城公園（中央区）</figcaption>
+      </figure>
+      <h1 class="tate">大阪の暮らし・健康・美容を、<br><span class="shu">もっと身近に。</span></h1>
+      <ol class="coverlines" aria-label="この号の特集">
+        <li><a href="#areas"><span class="n">01</span><b>大阪の<wbr>「ふだん」を<wbr>歩く</b><small>キタ・ミナミから天満まで、6エリアの横顔</small></a></li>
+        <li><a href="#unwell"><span class="n">02</span><b>近所の<wbr>お医者さん、<wbr>どう探す？</b><small>#7119から休日の診療所まで、相談先の一覧</small></a></li>
+        <li><a href="#calendar"><span class="n">03</span><b>この季節の<wbr>大阪、<wbr>なにがある？</b><small>祭りと行事と、季節の体調メモ</small></a></li>
+        <li><a href="#checklist"><span class="n">04</span><b>ごみの日、<wbr>いつ<wbr>やったっけ？</b><small>防災・医療・手続きを12項目でチェック</small></a></li>
+        <li><a href="#themes"><span class="n">05</span><b>これから<wbr>始まる、<wbr>15の連載</b><small>大阪の「おもろい」ひとから、キレイの話まで</small></a></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<div class="seigaiha" aria-hidden="true"></div>
+
+<section class="sec" id="contents" aria-labelledby="h-contents">
+  <div class="wrap">
+    <div class="sec-head"><h2 id="h-contents">この号の目次</h2><span class="en" lang="en">Contents</span></div>
+    <p class="lede rv">創刊準備号の目次です。連載は、準備が整ったものから順次公開していきます。気になるところから、どうぞ。</p>
+    {{contents}}
+  </div>
+</section>
+
+<section class="sec sec-alt" id="note" aria-labelledby="h-note">
+  <div class="wrap note">
+    <h2 class="kicker" id="h-note">編集部より</h2>
+    <div class="note-body rv">
+      <p>OSAKA LIVEは、大阪に住む人のためのWebマガジンです。朝の御堂筋線、夕方の商店街、休日の大川沿い。観光ガイドには載らない、毎日の大阪の話を届けます。</p>
+      <p>扱うテーマは5つ。街の暮らし、健康・医療、美容・ウェルネス、ひと・カルチャー、そして生活の実用ガイドです。制度や手続きの情報は、まず大阪市のものから扱います。創刊準備号では、これから始まる連載の予告と、大阪で暮らすうえで手元に置いておきたい基本情報をまとめました。</p>
+      <p>健康や美容の記事で扱うのは、病院の探し方や制度の使い方などの一般的な情報です。気になる症状があるときは、医療機関に相談してください。</p>
+      <p>記事は、国や大阪府・大阪市などの一次情報を確かめてから書き、出典を示します。制度や連絡先は変わることがあるため、見直した日付も記します。</p>
+      <p class="note-sign">2026年10月　OSAKA LIVE 編集部</p>
+    </div>
+    <figure class="note-ph rv">{{img:note}}<figcaption>紅葉の箕面（箕面市）</figcaption></figure>
+  </div>
+</section>
+
+<section class="sec" id="areas" aria-labelledby="h-areas">
+  <div class="wrap">
+    <div class="sec-head"><h2 id="h-areas">大阪<wbr>エリアガイド</h2><span class="en" lang="en">Area Guide</span></div>
+    <p class="lede rv">キタとミナミだけやない。6つのエリアの横顔を、主な駅とあわせて紹介します。</p>
+    <div class="areas" role="region" aria-label="エリアガイド" tabindex="0">
+      <article class="area"><figure class="area-ph">{{img:a_kita}}</figure><div class="area-in"><span class="kanji" aria-hidden="true">北</span><h3>キタ<small>梅田・大阪駅周辺／北区</small></h3><p>JR大阪駅と梅田の各駅が集まる北の玄関口。高層ビルと迷路のような地下街、お初天神や阪急東通の飲み屋街が混ざり合う街です。</p><dl><dt>こんな日に</dt><dd>買い物も乗り換えも一度に済ませたい日</dd><dt>主な駅</dt><dd>大阪、梅田、東梅田、西梅田、大阪梅田、北新地</dd></dl></div></article>
+      <article class="area"><figure class="area-ph">{{img:a_minami}}</figure><div class="area-in"><span class="kanji" aria-hidden="true">南</span><h3>ミナミ<small>なんば・心斎橋／中央区・浪速区</small></h3><p>道頓堀の川沿いに看板が並び、心斎橋筋の商店街がなんばへと続く繁華街。劇場や飲食店も多く、夜遅くまでにぎわいます。</p><dl><dt>こんな日に</dt><dd>にぎやかな街を食べ歩きしたい日</dd><dt>主な駅</dt><dd>なんば、心斎橋、日本橋、大阪難波、JR難波</dd></dl></div></article>
+      <article class="area"><figure class="area-ph">{{img:a_naka}}</figure><div class="area-in"><span class="kanji" aria-hidden="true">中</span><h3>中之島・北浜<small>北区・中央区</small></h3><p>堂島川と土佐堀川に挟まれた中洲に、美術館や図書館、近代建築が並びます。対岸の北浜は、大阪取引所とレトロビルの並ぶ街です。</p><dl><dt>こんな日に</dt><dd>川沿いで建築と美術を眺める日</dd><dt>主な駅</dt><dd>淀屋橋、北浜、なにわ橋、大江橋、渡辺橋、中之島</dd></dl></div></article>
+      <article class="area"><figure class="area-ph">{{img:a_ten}}</figure><div class="area-in"><span class="kanji" aria-hidden="true">天</span><h3>天王寺・阿倍野<small>天王寺区・阿倍野区・浪速区</small></h3><p>天王寺公園や動物園、四天王寺のある街に、あべのハルカスが建つ南の拠点。通天閣の新世界へも歩いてすぐです。</p><dl><dt>こんな日に</dt><dd>公園と下町を気ままに歩く日</dd><dt>主な駅</dt><dd>天王寺、大阪阿部野橋、阿倍野、天王寺駅前、四天王寺前夕陽ケ丘</dd></dl></div></article>
+      <article class="area"><figure class="area-ph">{{img:a_castle}}</figure><div class="area-in"><span class="kanji" aria-hidden="true">城</span><h3>京橋・大阪城<small>都島区・中央区</small></h3><p>大阪城公園の緑と石垣を望むエリア。京橋は複数の路線が交わる乗換駅で、駅前には飲食店が集まります。</p><dl><dt>こんな日に</dt><dd>お城のまわりを散歩したい日</dd><dt>主な駅</dt><dd>京橋、大阪城公園、森ノ宮、大阪ビジネスパーク、天満橋、谷町四丁目</dd></dl></div></article>
+      <article class="area"><figure class="area-ph">{{img:a_tenma}}</figure><div class="area-in"><span class="kanji" aria-hidden="true">宮</span><h3>天満・天神橋筋<small>北区</small></h3><p>大阪天満宮の門前町として育った、天神橋筋商店街のある街。アーケードが南北に長く続き、日々の買い物客でにぎわいます。</p><dl><dt>こんな日に</dt><dd>商店街で晩ごはんの買い物をする日</dd><dt>主な駅</dt><dd>南森町、大阪天満宮、扇町、天満、天神橋筋六丁目</dd></dl></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-alt" id="unwell" aria-labelledby="h-unwell">
+  <div class="wrap">
+    <div class="sec-head"><span class="tag tag-shu">保存版</span><h2 id="h-unwell"><span class="nw">体調がすぐれないときの</span><wbr>相談先</h2><span class="en" lang="en">Help Lines</span></div>
+    <p class="lede">救急車を呼ぶか迷うときや、休日・夜間に困ったときの、大阪府・大阪市の公的な相談窓口です。</p>
+    <div class="unwell">
+      <div class="u-alert"><b>命に関わる緊急時は、迷わず</b><a href="tel:119">119</a></div>
+      <ul class="quick" aria-label="おもな相談先の番号">
+        <li><span>救急車を呼ぶか迷ったら<span class="nw">（24時間）</span><br><small>つながらないとき <a href="tel:0665827119">06-6582-7119</a></small></span><a href="tel:%237119">#7119</a></li>
+        <li><span>夜間の子どもの急病<span class="nw">（19時〜翌8時）</span><br><small>つながらないとき <a href="tel:0667653650">06-6765-3650</a></small></span><a href="tel:%238000">#8000</a></li>
+        <li><span>いま受診できる医療機関<span class="nw">（24時間）</span></span><a href="tel:0666931199">06-6693-1199</a></li>
+      </ul>
+      <p class="quick-note">「#」から始まる番号は、iPhoneやダイヤル回線・IP電話などからかけられないことがあります。そのときは06から始まる番号へ。</p>
+      <ul class="res">
+        <li>
+          <h3>救急安心センターおおさか</h3>
+          <a class="num" href="tel:%237119">#7119</a>
+          <p class="meta">つながらないとき <a href="tel:0665827119">06-6582-7119</a><br><span class="nw">24時間・365日</span></p>
+          <p>急な病気やけがで、救急車を呼ぶか、すぐ病院へ行くか迷うとき。看護師などが、医師の支援のもとで相談に応じます。</p>
+          <p class="meta">出典：<a href="https://www.city.osaka.lg.jp/shobo/page/0000052526.html" target="_blank" rel="noopener">大阪市消防局</a></p>
+        </li>
+        <li>
+          <h3>小児救急電話相談</h3>
+          <a class="num" href="tel:%238000">#8000</a>
+          <p class="meta">つながらないとき <a href="tel:0667653650">06-6765-3650</a><br><span class="nw">毎日19:00〜翌8:00</span></p>
+          <p>夜間に子どもの急な病気やけがで、どうしたらよいか迷うとき。看護職の相談員が相談に応じます。</p>
+          <p class="meta">出典：<a href="https://www.pref.osaka.lg.jp/o100030/iryo/qq/osaka-qq-navi_02.html" target="_blank" rel="noopener">大阪府</a></p>
+        </li>
+        <li>
+          <h3>大阪府<wbr>救急医療<wbr>情報センター</h3>
+          <a class="num" href="tel:0666931199">06-6693-1199</a>
+          <p class="meta"><span class="nw">24時間・365日</span></p>
+          <p>いま診療を受けられる医療機関を、電話で教えてほしいとき。</p>
+          <p class="meta">出典：<a href="https://www.pref.osaka.lg.jp/o100030/iryo/qq/osaka-qq-navi_01.html" target="_blank" rel="noopener">大阪府</a></p>
+        </li>
+        <li>
+          <h3>医療機関を探す</h3>
+          <a class="web" href="https://www.iryou.teikyouseido.mhlw.go.jp/znk-web/juminkanja/S2310/initialize?pref=27" target="_blank" rel="noopener">医療情報ネット（ナビイ）</a>
+          <p class="meta">厚生労働省が運営する検索サイト（大阪府のページ）</p>
+          <p>近くの病院や診療所、歯科、薬局を、場所や診療科から調べたいとき。</p>
+          <p class="meta">出典：<a href="https://www.pref.osaka.lg.jp/o100030/iryo/qq/osaka-qq-navi_01.html" target="_blank" rel="noopener">大阪府</a></p>
+        </li>
+        <li>
+          <h3>休日・夜間<wbr>急病診療所<wbr>（大阪市）</h3>
+          <a class="web" href="https://www.city.osaka.lg.jp/kenko/page/0000371474.html" target="_blank" rel="noopener">休日・夜間急病診療所の案内</a>
+          <p class="meta">診療科と受付時間は公式ページでご確認ください</p>
+          <p>休日や夜間に、急な病気で受診先を探しているとき。受診前に電話で確認してください。</p>
+          <p class="meta">出典：<a href="https://www.city.osaka.lg.jp/kenko/page/0000371474.html" target="_blank" rel="noopener">大阪市健康局</a></p>
+        </li>
+        <li>
+          <h3>大阪救急ナビ</h3>
+          <a class="web" href="https://www.pref.osaka.lg.jp/o100030/iryo/qq/osaka-qq-navi.html" target="_blank" rel="noopener">大阪救急ナビ（大阪府）</a>
+          <p class="meta">救急の相談窓口と医療機関の探し方をまとめた府のページ</p>
+          <p>どの窓口に相談すればよいか、まとめて確かめたいとき。</p>
+          <p class="meta">出典：<a href="https://www.pref.osaka.lg.jp/o100030/iryo/qq/osaka-qq-navi.html" target="_blank" rel="noopener">大阪府</a></p>
+        </li>
+      </ul>
+      <p class="disclaimer">この一覧は一般的な情報で、医療上の助言ではありません。内容は変わることがあるため、受診前に各機関へ確認を。最終確認日：<span class="nw">2026年10月30日</span></p>
+    </div>
+    <button class="copy-link" type="button" aria-live="polite" data-copy="unwell" data-text="大阪の休日・夜間の医療相談先（#7119・#8000ほか）｜OSAKA LIVE">相談先のリンクをコピー</button>
+  </div>
+</section>
+
+<section class="sec" id="calendar" aria-labelledby="h-calendar">
+  <div class="wrap">
+    <div class="sec-head"><h2 id="h-calendar">大阪の<wbr>季節カレンダー</h2><span class="en" lang="en">Seasonal Calendar</span></div>
+    <p class="lede rv">祭りや行事と、季節ごとに気をつけたい体調のことを、月ごとにまとめました。</p>
+    <div class="cal">
+      <article class="season" id="s-spring" aria-labelledby="h-spring">
+        <h3 id="h-spring">春<span class="en">3〜5月</span><span class="now">いまの季節</span></h3>
+        <dl class="ev">
+          <dt>3月</dt><dd>大相撲三月場所<br><small class="muted">毎年3月、エディオンアリーナ大阪（大阪府立体育会館）</small></dd>
+          <dt>4月</dt><dd>造幣局 桜の通り抜け<br><small class="muted">例年4月中旬の約1週間・事前予約制</small></dd>
+          <dt>5月</dt><dd>中之島公園ばら園の見頃<br><small class="muted">例年5月中旬（秋は10月中旬）</small></dd>
+        </dl>
+        <p class="health-memo"><b>体調メモ</b>　スギやヒノキの花粉が飛ぶ季節です。飛散情報を確かめ、つらい症状が続くときは医療機関に相談を。</p>
+      </article>
+      <article class="season" id="s-summer" aria-labelledby="h-summer">
+        <h3 id="h-summer">夏<span class="en">6〜8月</span><span class="now">いまの季節</span></h3>
+        <dl class="ev">
+          <dt>6月</dt><dd>愛染まつり（愛染堂勝鬘院）<br><small class="muted">毎年6月30日〜7月2日。大阪の夏祭りのさきがけとされる</small></dd>
+          <dt>7月</dt><dd>天神祭（大阪天満宮）<br><small class="muted">例年7月24・25日、船渡御や奉納花火</small></dd>
+          <dt>7〜8月</dt><dd>住吉祭（住吉大社）<br><small class="muted">7月の海の日から8月1日まで</small></dd>
+        </dl>
+        <p class="health-memo"><b>体調メモ</b>　6月は平年では、1年でいちばん雨の多い月。8月の平年の日最高気温は33.7℃。蒸し暑い日が続き、熱中症に気をつけたい季節です。具合が悪いときは涼しい場所で休み、水分をとりましょう。意識がおかしい、自分で水が飲めないときは、迷わず119番を。</p>
+      </article>
+      <article class="season" id="s-autumn" aria-labelledby="h-autumn">
+        <h3 id="h-autumn">秋<span class="en">9〜11月</span><span class="now">いまの季節</span></h3>
+        <dl class="ev">
+          <dt>9月</dt><dd>岸和田だんじり祭<span class="nw">（9月祭礼）</span><br><small class="muted">2026年は9月19・20日（岸和田・春木地区）</small></dd>
+          <dt>10月</dt><dd>岸和田だんじり祭<span class="nw">（10月祭礼）</span><br><small class="muted">2026年は10月10・11日（山手地区）</small></dd>
+          <dt>11月</dt><dd>大阪・光の饗宴<br><small class="muted">2026年は11月3日〜翌1月31日</small></dd>
+        </dl>
+        <p class="health-memo"><b>体調メモ</b>　大阪の平年の月平均気温は、10月が19.5℃、11月が13.8℃。ひと月で5℃以上下がります。脱ぎ着しやすい服で調節し、不調が続くときは医療機関に相談を。</p>
+      </article>
+      <article class="season" id="s-winter" aria-labelledby="h-winter">
+        <h3 id="h-winter">冬<span class="en">12〜2月</span><span class="now">いまの季節</span></h3>
+        <dl class="ev">
+          <dt>12月</dt><dd>御堂筋イルミネーション<br><small class="muted">2026年は12月31日まで・約4km</small></dd>
+          <dt>1月</dt><dd>十日えびす（えべっさん）<br><small class="muted">毎年1月9日〜11日、今宮戎神社</small></dd>
+          <dt>2月</dt><dd>大阪マラソン<br><small class="muted">2027年は2月28日（日）開催予定</small></dd>
+        </dl>
+        <p class="health-memo"><b>体調メモ</b>　空気が乾燥し、かぜやインフルエンザなどの感染症が増えやすい時期です。発熱が続くときは医療機関に相談を。</p>
+      </article>
+    </div>
+    <p class="disclaimer">日程は年ごとに変わるため、主催者の公式情報をご確認ください。気温・降水は気象庁の平年値（大阪）です。</p>
+  </div>
+</section>
+
+<section class="sec sec-alt" id="checklist" aria-labelledby="h-checklist">
+  <div class="wrap">
+    <div class="sec-head"><span class="tag tag-shu">保存版</span><h2 id="h-checklist">大阪暮らし<wbr>チェックリスト</h2><span class="en" lang="en">Living Checklist</span></div>
+    <p class="lede">大阪に引っ越してきた人も、長く住んでいる人も。防災・医療・手続きの12項目です（制度は大阪市の場合）。チェックの記録はこの端末の中にだけ保存されます。</p>
+    <p class="check-count" aria-live="polite">12項目中 <b id="check-n">0</b> 項目チェック済み</p>
+    <div class="check-wrap">
+      <div class="check-grp" role="group" aria-labelledby="cg1">
+        <h3 id="cg1">防災</h3>
+        <label><input type="checkbox" id="c1-1"><span>大阪防災アプリを入れている<small>大阪市が提供。大阪府内全域の避難所や防災情報を確認できます</small></span></label>
+        <label><input type="checkbox" id="c1-2"><span>自宅周辺の水害ハザードマップを見た<small>大阪市は24区それぞれの水害<span class="nw">ハザードマップ</span>を公開しています</small></span></label>
+        <label><input type="checkbox" id="c1-3"><span>近くの避難所の場所を確かめた<small>大阪防災アプリの地図でも、避難所を確認できます</small></span></label>
+        <label><input type="checkbox" id="c1-4"><span>水や食料などの備えを用意した<small>大阪防災アプリには、備蓄品のチェックリストもあります</small></span></label>
+      </div>
+      <div class="check-grp" role="group" aria-labelledby="cg2">
+        <h3 id="cg2">医療・健康</h3>
+        <label><input type="checkbox" id="c2-1"><span>#7119と#8000をスマホの連絡先に登録した<small>救急車を呼ぶか迷うときと、子どもの夜間の電話相談です</small></span></label>
+        <label><input type="checkbox" id="c2-2"><span>相談できるかかりつけ医がいる<small>健康のことを相談でき、必要なときは専門医を紹介してくれる身近な医師</small></span></label>
+        <label><input type="checkbox" id="c2-3"><span>特定健診の受け方を確かめた<small>大阪市国保の40〜74歳は無料。受診券を持って受診します</small></span></label>
+        <label><input type="checkbox" id="c2-4"><span>がん検診の対象と費用を確かめた<small>大阪市は年齢などで対象が決まり、費用は無料〜1,500円です</small></span></label>
+      </div>
+      <div class="check-grp" role="group" aria-labelledby="cg3">
+        <h3 id="cg3">暮らしの手続き</h3>
+        <label><input type="checkbox" id="c3-1"><span>転入届を14日以内に出した<small>大阪市は区役所などの窓口で。引っ越し前や郵送では出せません</small></span></label>
+        <label><input type="checkbox" id="c3-2"><span>ごみの4分類と収集日を確かめた<small>収集日は地域で異なります。<span class="nw">「さんあ～る」</span>や収集マップで確認を</small></span></label>
+        <label><input type="checkbox" id="c3-3"><span>粗大ごみの出し方を確かめた<small>大阪市では30cmを超えるものなどが対象。事前予約制で有料です</small></span></label>
+        <label><input type="checkbox" id="c3-5"><span>自転車保険に入っているか確かめた<small>大阪府では2016年7月から、自転車利用者の保険加入が義務です</small></span></label>
+      </div>
+    </div>
+    <p class="disclaimer">出典：<a href="https://www.city.osaka.lg.jp/kenko/page/0000008503.html" target="_blank" rel="noopener">大阪市（がん検診）</a>・<a href="https://www.city.osaka.lg.jp/shimin/page/0000369822.html" target="_blank" rel="noopener">大阪市（転入届）</a>・<a href="https://www.city.osaka.lg.jp/kankyo/page/0000009337.html" target="_blank" rel="noopener">大阪市（ごみ）</a>・<a href="https://www.city.osaka.lg.jp/kikikanrishitsu/page/0000345020.html" target="_blank" rel="noopener">大阪市（大阪防災アプリ）</a>・<a href="https://www.pref.osaka.lg.jp/o130080/dorokankyo/osakajitensha/jitensya-hoken.html" target="_blank" rel="noopener">大阪府（自転車保険）</a>　最終確認日：<span class="nw">2026年10月30日</span>。制度は変わることがあるため、公式ページでご確認ください。</p>
+    <button class="copy-link" type="button" aria-live="polite" data-copy="checklist" data-text="大阪暮らしチェックリスト（防災・医療・手続きの12項目）｜OSAKA LIVE">チェックリストのリンクをコピー</button>
+  </div>
+</section>
+
+<section class="sec" id="themes" aria-labelledby="h-themes">
+  <div class="wrap">
+    <div class="sec-head"><h2 id="h-themes">5つのテーマ</h2><span class="en" lang="en">Five Themes</span></div>
+    <p class="lede rv">暮らし、健康、美容、ひと、ガイド。5つの柱で大阪の毎日を取り上げます。</p>
+
+    <article class="theme rv" id="living" aria-labelledby="h-living">
+      <p class="theme-no" aria-hidden="true">01</p>
+      <div class="theme-txt">
+        <h3 id="h-living">大阪の暮らし<span class="en" lang="en">Living in Osaka</span></h3>
+        <p>駅前の喫茶店、自転車で通うスーパー、近所の公園。大阪の街で毎日をどう過ごすかを、住む人の目線で取り上げます。部屋探しや移動など、暮らしの土台になる話題から始めます。</p>
+        <p class="series-cap">これから始まる連載</p>
+        <ul class="series">
+          <li>大阪で一人暮らしを始める前に</li>
+          <li>大阪の商店街さんぽ</li>
+          <li>水都大阪の川べりを歩く</li>
+        </ul>
+      </div>
+      <figure>{{img:life}}<figcaption>大阪の路地で</figcaption></figure>
+    </article>
+
+    <article class="theme flip rv" id="health" aria-labelledby="h-health">
+      <p class="theme-no" aria-hidden="true">02</p>
+      <div class="theme-txt">
+        <h3 id="h-health">健康・医療<span class="en" lang="en">Health &amp; Medical</span></h3>
+        <p>かかりつけ医の見つけ方や、休日・夜間に困ったときの相談先など、医療の基本情報を扱います。内容は公的機関の情報をもとに確認し、定期的に見直します。</p>
+        <p class="notice">掲載しているのは一般的な健康情報です。診断や治療については、医療機関にご相談ください。</p>
+        <p class="series-cap">これから始まる連載</p>
+        <ul class="series">
+          <li>大阪でかかりつけ医を見つけるには</li>
+          <li>大阪市のがん検診・特定健診ガイド</li>
+          <li>大阪の休日・夜間の医療相談ガイド</li>
+        </ul>
+      </div>
+      <figure>{{img:health}}<figcaption>中之島公園ばら園の橋（北区）</figcaption></figure>
+    </article>
+
+    <article class="theme wide rv" id="beauty" aria-labelledby="h-beauty">
+      <p class="theme-no" aria-hidden="true">03</p>
+      <figure>{{img:beauty}}<figcaption>スキンケアのテクスチャー（イメージ）</figcaption></figure>
+      <div class="theme-txt">
+        <h3 id="h-beauty">美容・<wbr>ウェルネス<span class="en" lang="en">Beauty &amp; Wellness</span></h3>
+        <p>スキンケア、睡眠、食事、からだを動かす習慣など、毎日のセルフケアの基本を扱います。流行や広告の言葉に流されないよう、成分表示や情報の読み方も一緒に考えます。</p>
+        <p class="series-cap">これから始まる連載</p>
+        <ul class="series">
+          <li>化粧品の成分表示の読み方</li>
+          <li>美容医療の前に確かめたい、契約と相談先</li>
+          <li>大阪の気候に合わせた、季節のスキンケア</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="theme rv" id="culture" aria-labelledby="h-culture">
+      <p class="theme-no" aria-hidden="true">04</p>
+      <div class="theme-txt">
+        <h3 id="h-culture">ひと・<wbr>トレンド・<wbr>カルチャー<span class="en" lang="en">People &amp; Culture</span></h3>
+        <p>だしや粉もん、銭湯、ミュージアム。大阪の暮らしに根づく文化を、店を営む人やつくる人の話とあわせて紹介します。</p>
+        <p class="series-cap">これから始まる連載</p>
+        <ul class="series">
+          <li>大阪のだしと粉もんの話</li>
+          <li>大阪の銭湯をめぐる</li>
+          <li>中之島のミュージアムめぐり</li>
+        </ul>
+      </div>
+      <figure>{{img:culture}}<figcaption>天神祭の夜（北区）</figcaption></figure>
+    </article>
+
+    <article class="theme rv" id="guide" aria-labelledby="h-guide">
+      <p class="theme-no" aria-hidden="true">05</p>
+      <div class="theme-txt">
+        <h3 id="h-guide">暮らしのガイド<span class="en" lang="en">Living Guide</span></h3>
+        <p>ごみの出し方、防災の備え、引っ越しの手続きなど、大阪で暮らすための実用情報をまとめます。制度は変わることがあるため、自治体の公式情報へのリンクを添えます。</p>
+      </div>
+      <div>
+        <p class="series-cap first">これから始まる連載</p>
+        <ul class="series">
+          <li>大阪市のごみ分別と出し方</li>
+          <li>大阪で引っ越したときの手続き一覧</li>
+          <li>南海トラフ地震に備える大阪の防災</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+<section class="sec sec-alt" id="policy" aria-labelledby="h-policy">
+  <div class="wrap">
+    <div class="sec-head"><h2 id="h-policy">編集方針・<wbr>運営者情報</h2><span class="en" lang="en">Editorial Policy</span></div>
+    <p class="lede">OSAKA LIVEがどのように記事をつくり、情報を扱っているかをまとめています。</p>
+    <div class="policy">
+      <div><h3>運営者情報</h3><p>サイト名：OSAKA LIVE（オオサカライブ）<br>編集：OSAKA LIVE 編集部<br>運営者：【要記入】<br>編集責任者：【要記入】<br>連絡先：【要記入】</p><p>運営者は、OSAKA LIVEのほかにも事業を営んでいます。その事業に関わる内容を扱うときは、「広告・PR表記について」にしたがって表示します。</p><p>記事内容の誤りのご指摘も、上記の連絡先で受け付けます。</p></div>
+      <div><h3>編集方針</h3><p>記事は、国・大阪府・大阪市などの公的機関や専門団体が公開する一次情報を確認して作成し、参照した情報源を明記します。掲載後も定期的に内容を見直し、誤りがあれば訂正して更新日を記録します。健康・医療の記事には、執筆者と内容を確認した者の氏名・資格・確認の範囲を、記事ごとに記載します。</p></div>
+      <div><h3>健康・医療情報の取り扱い</h3><p>健康・医療・美容に関する記事は一般的な情報の提供を目的としており、診断や治療に代わるものではなく、特定の商品やサービスをすすめるものでもありません。症状や治療については、医療機関や医師・薬剤師にご相談ください。</p></div>
+      <div><h3>広告・PR表記について</h3><p>当サイトでは現在、広告や広告を目的とした記事を掲載していません。今後、運営者または運営者と関係のある事業者の商品・サービスに触れる場合は、その記事やリンクのすぐ近くに「PR」と分かりやすく表示し、運営者との関係もあわせて記載します。健康・医療の記事の本文中で、特定の商品をすすめたり、商品ページへ案内したりすることはありません。記事のテーマ選びや内容は、編集方針にもとづいて編集部が判断します。</p></div>
+      <div><h3>写真について</h3><p class="ragged">掲載写真は Unsplash ライセンスの写真を使用しています。撮影：{{credits}}<span class="nw">（敬称略）</span></p></div>
+      <div><h3>プライバシー・外部送信について</h3><p>現在、アクセス解析ツールは使用していません。文字や写真の表示のため、Google Fonts と Unsplash のサーバーに接続します。チェックリストの記録はこの端末の中にだけ保存され、外部には送信されません。</p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="ft">
+  <div class="seigaiha ft-wave" aria-hidden="true"></div>
+  <div class="wrap">
+    <a class="logo" href="#top"><b>OSAKA LIVE</b></a>
+    <p class="muted m0">大阪の暮らし・健康・美容・カルチャーを届けるWebマガジン。</p>
+    <div class="ft-row">
+      <p class="m0">最終更新日：<time datetime="{{updated_iso}}">{{updated_ja}}</time></p>
+      <div class="ft-actions">
+        <button type="button" id="share" aria-live="polite">このページを共有</button>
+        <a class="totop" href="#top">ページ上部へ</a>
+      </div>
+    </div>
+    <p class="muted m0"><small>© 2026 OSAKA LIVE</small></p>
+  </div>
+</footer>

@@ -1,0 +1,768 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>大阪の暮らし・健康・美容のWebマガジン｜OSAKA LIVE</title>
+<meta name="description" content="大阪で暮らす人のためのWebマガジン「OSAKA LIVE（オオサカライブ）」。休日・夜間の医療相談先（#7119・#8000）、祭りと体調の季節カレンダー、防災・ごみ・転入の12項目チェックリストを、公的な出典つきでまとめました。">
+<link rel="canonical" href="https://osakadou.live/">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#F7F7F4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14181F" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="OSAKA LIVE">
+<meta property="og:title" content="大阪の暮らし・健康・美容のWebマガジン｜OSAKA LIVE">
+<meta property="og:description" content="大阪で、暮らす。住む人の目線で、出典を明記して書くWebマガジン。休日・夜間の相談先、季節カレンダー、暮らしのチェックリストを掲載。">
+<meta property="og:url" content="https://osakadou.live/">
+<meta property="og:image" content="https://osakadou.live/og-cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="OSAKA LIVE 創刊準備号　大阪で、暮らす。住む人の目線で、出典を明記して書くWebマガジン。">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="preload" as="image" media="(max-width:959px)" imagesrcset="https://images.unsplash.com/photo-1772249491195-e95a8a5ed845?auto=format&fit=crop&crop=bottom&q=45&w=400&h=600 400w, https://images.unsplash.com/photo-1772249491195-e95a8a5ed845?auto=format&fit=crop&crop=bottom&q=45&w=540&h=810 540w" imagesizes="calc(100vw - 121px)" fetchpriority="high">
+<link rel="preload" as="image" media="(min-width:960px)" imagesrcset="https://images.unsplash.com/photo-1772249491195-e95a8a5ed845?auto=format&fit=crop&crop=bottom&q=50&w=600&h=600 600w, https://images.unsplash.com/photo-1772249491195-e95a8a5ed845?auto=format&fit=crop&crop=bottom&q=50&w=900&h=900 900w" imagesizes="(min-width:1280px) 600px, 47vw" fetchpriority="high">
+<script>
+document.documentElement.classList.add('js');
+// only a failure of our own inline script reverts to the no-JS layout (not LINE/extension injections)
+addEventListener('error', (e) => { if (!window.__ol && (!e.filename || e.filename === location.href)) document.documentElement.classList.remove('js'); });
+// webfont CSS is added from script so it never blocks first paint (display=swap)
+["https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,700&display=swap", "https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&display=swap&text=%261235689BCGHLMOPWabcdeghiklnoprstuvy%E3%80%81%E3%80%82%E3%80%8C%E3%80%8D%E3%80%9C%E3%81%82%E3%81%84%E3%81%86%E3%81%88%E3%81%8A%E3%81%8B%E3%81%8C%E3%81%8D%E3%81%8F%E3%81%90%E3%81%91%E3%81%93%E3%81%94%E3%81%95%E3%81%97%E3%81%99%E3%81%9B%E3%81%9F%E3%81%A0%E3%81%A3%E3%81%A4%E3%81%A6%E3%81%A7%E3%81%A8%E3%81%A9%E3%81%AA%E3%81%AB%E3%81%AE%E3%81%AF%E3%81%B0%E3%81%B2%E3%81%B5%E3%81%B9%E3%81%BD%E3%81%BE%E3%81%BF%E3%82%80%E3%82%81%E3%82%82%E3%82%84%E3%82%88%E3%82%89%E3%82%8A%E3%82%8B%E3%82%8C%E3%82%8F%E3%82%92%E3%82%93%E3%82%A2%E3%82%A4%E3%82%A6%E3%82%A7%E3%82%A8%E3%82%AB%E3%82%AC%E3%82%AD%E3%82%AF%E3%82%B1%E3%82%B8%E3%82%B9%E3%82%BF%E3%83%80%E3%83%81%E3%83%83%E3%83%86%E3%83%88%E3%83%89%E3%83%8A%E3%83%8D%E3%83%95%E3%83%9E%E3%83%9F%E3%83%A0%E3%83%A3%E3%83%A5%E3%83%A9%E3%83%AA%E3%83%AB%E3%83%AC%E3%83%B3%E3%83%BB%E3%83%BC%E4%B8%80%E4%B8%AD%E4%B9%8B%E4%BA%AC%E4%BA%BA%E4%BC%91%E4%BD%8F%E4%BD%93%E5%80%8D%E5%80%99%E5%81%A5%E5%82%99%E5%85%88%E5%85%B8%E5%86%AC%E5%87%BA%E5%88%86%E5%88%A5%E5%89%8D%E5%8C%96%E5%8C%97%E5%8C%BA%E5%8C%BB%E5%8D%97%E5%8F%B7%E5%90%88%E5%91%A8%E5%93%81%E5%95%86%E5%96%B6%E5%9C%B0%E5%9F%8E%E5%A0%B1%E5%A4%8F%E5%A4%9C%E5%A4%A7%E5%A4%A9%E5%A4%AE%E5%A5%91%E5%A7%8B%E5%AD%A3%E5%AE%9A%E5%AE%AE%E5%AE%B9%E5%AF%BA%E5%B3%B6%E5%B7%9D%E5%B8%82%E5%BA%97%E5%BA%B7%E5%BC%95%E5%BF%83%E6%83%85%E6%88%90%E6%89%80%E6%89%8B%E6%8E%A2%E6%96%8E%E6%96%B9%E6%97%A5%E6%98%8E%E6%98%A5%E6%9A%AE%E6%9B%B8%E6%9C%88%E6%A2%85%E6%A4%9C%E6%A9%8B%E6%AC%A1%E6%AD%A9%E6%B0%97%E6%B0%B4%E6%B5%9C%E6%B5%AA%E6%B5%B7%E6%B9%AF%E6%BA%80%E7%81%BD%E7%89%B9%E7%8E%8B%E7%94%B0%E7%99%82%E7%9B%AE%E7%9B%B8%E7%A2%BA%E7%A4%BA%E7%A5%9E%E7%A7%8B%E7%AD%8B%E7%AF%80%E7%B2%89%E7%B2%A7%E7%B4%84%E7%B6%9A%E7%B7%9A%E7%B7%A8%E7%BE%8E%E8%80%85%E8%A1%97%E8%A1%A8%E8%A6%8B%E8%A6%A7%E8%A8%98%E8%A8%BA%E8%A9%B1%E8%AA%AD%E8%AA%BF%E8%AB%87%E8%B6%8A%E8%BA%AB%E8%BC%89%E8%BE%BA%E8%BF%91%E9%80%9F%E9%80%A3%E9%81%8B%E9%83%A8%E9%83%BD%E9%87%8E%E9%87%9D%E9%8A%AD%E9%96%93%E9%98%AA%E9%98%B2%E9%98%BF%E9%9B%86%E9%9C%87%E9%A7%85%EF%BC%8F%EF%BC%9F"].forEach((h) => { const l = document.createElement('link'); l.rel = 'stylesheet'; l.href = h; document.head.append(l); });
+</script>
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,700&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&display=swap&text=%261235689BCGHLMOPWabcdeghiklnoprstuvy%E3%80%81%E3%80%82%E3%80%8C%E3%80%8D%E3%80%9C%E3%81%82%E3%81%84%E3%81%86%E3%81%88%E3%81%8A%E3%81%8B%E3%81%8C%E3%81%8D%E3%81%8F%E3%81%90%E3%81%91%E3%81%93%E3%81%94%E3%81%95%E3%81%97%E3%81%99%E3%81%9B%E3%81%9F%E3%81%A0%E3%81%A3%E3%81%A4%E3%81%A6%E3%81%A7%E3%81%A8%E3%81%A9%E3%81%AA%E3%81%AB%E3%81%AE%E3%81%AF%E3%81%B0%E3%81%B2%E3%81%B5%E3%81%B9%E3%81%BD%E3%81%BE%E3%81%BF%E3%82%80%E3%82%81%E3%82%82%E3%82%84%E3%82%88%E3%82%89%E3%82%8A%E3%82%8B%E3%82%8C%E3%82%8F%E3%82%92%E3%82%93%E3%82%A2%E3%82%A4%E3%82%A6%E3%82%A7%E3%82%A8%E3%82%AB%E3%82%AC%E3%82%AD%E3%82%AF%E3%82%B1%E3%82%B8%E3%82%B9%E3%82%BF%E3%83%80%E3%83%81%E3%83%83%E3%83%86%E3%83%88%E3%83%89%E3%83%8A%E3%83%8D%E3%83%95%E3%83%9E%E3%83%9F%E3%83%A0%E3%83%A3%E3%83%A5%E3%83%A9%E3%83%AA%E3%83%AB%E3%83%AC%E3%83%B3%E3%83%BB%E3%83%BC%E4%B8%80%E4%B8%AD%E4%B9%8B%E4%BA%AC%E4%BA%BA%E4%BC%91%E4%BD%8F%E4%BD%93%E5%80%8D%E5%80%99%E5%81%A5%E5%82%99%E5%85%88%E5%85%B8%E5%86%AC%E5%87%BA%E5%88%86%E5%88%A5%E5%89%8D%E5%8C%96%E5%8C%97%E5%8C%BA%E5%8C%BB%E5%8D%97%E5%8F%B7%E5%90%88%E5%91%A8%E5%93%81%E5%95%86%E5%96%B6%E5%9C%B0%E5%9F%8E%E5%A0%B1%E5%A4%8F%E5%A4%9C%E5%A4%A7%E5%A4%A9%E5%A4%AE%E5%A5%91%E5%A7%8B%E5%AD%A3%E5%AE%9A%E5%AE%AE%E5%AE%B9%E5%AF%BA%E5%B3%B6%E5%B7%9D%E5%B8%82%E5%BA%97%E5%BA%B7%E5%BC%95%E5%BF%83%E6%83%85%E6%88%90%E6%89%80%E6%89%8B%E6%8E%A2%E6%96%8E%E6%96%B9%E6%97%A5%E6%98%8E%E6%98%A5%E6%9A%AE%E6%9B%B8%E6%9C%88%E6%A2%85%E6%A4%9C%E6%A9%8B%E6%AC%A1%E6%AD%A9%E6%B0%97%E6%B0%B4%E6%B5%9C%E6%B5%AA%E6%B5%B7%E6%B9%AF%E6%BA%80%E7%81%BD%E7%89%B9%E7%8E%8B%E7%94%B0%E7%99%82%E7%9B%AE%E7%9B%B8%E7%A2%BA%E7%A4%BA%E7%A5%9E%E7%A7%8B%E7%AD%8B%E7%AF%80%E7%B2%89%E7%B2%A7%E7%B4%84%E7%B6%9A%E7%B7%9A%E7%B7%A8%E7%BE%8E%E8%80%85%E8%A1%97%E8%A1%A8%E8%A6%8B%E8%A6%A7%E8%A8%98%E8%A8%BA%E8%A9%B1%E8%AA%AD%E8%AA%BF%E8%AB%87%E8%B6%8A%E8%BA%AB%E8%BC%89%E8%BE%BA%E8%BF%91%E9%80%9F%E9%80%A3%E9%81%8B%E9%83%A8%E9%83%BD%E9%87%8E%E9%87%9D%E9%8A%AD%E9%96%93%E9%98%AA%E9%98%B2%E9%98%BF%E9%9B%86%E9%9C%87%E9%A7%85%EF%BC%8F%EF%BC%9F"></noscript>
+<style>
+:root{
+  --wagara:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='20' viewBox='0 0 40 20'%3E%3Ccircle cx='20' cy='-10' r='20' fill='%23F7F7F4'/%3E%3Ccircle cx='20' cy='-10' r='19' fill='none' stroke='%23D3D5CF' stroke-width='1'/%3E%3Ccircle cx='20' cy='-10' r='14.4' fill='none' stroke='%23D3D5CF' stroke-width='1'/%3E%3Ccircle cx='20' cy='-10' r='9.2' fill='none' stroke='%23D3D5CF' stroke-width='1'/%3E%3Ccircle cx='20' cy='-10' r='4' fill='none' stroke='%23D3D5CF' stroke-width='1'/%3E%3Ccircle cx='0' cy='0' r='20' fill='%23F7F7F4'/%3E%3Ccircle cx='0' cy='0' r='19' fill='none' stroke='%23D3D5CF' stroke-width='1'/%3E%3Ccircle cx='0' cy='0' r='14.4' fill='none' stroke='%23D3D5CF' stroke-width='1'/%3E%3Ccircle cx='0' cy='0' r='9.2' fill='none' stroke='%23D3D5CF' stroke-width='1'/%3E%3Ccircle cx='0' cy='0' r='4' fill='none' stroke='%23D3D5CF' stroke-width='1'/%3E%3Ccircle cx='40' cy='0' r='20' fill='%23F7F7F4'/%3E%3Ccircle cx='40' cy='0' r='19' fill='none' stroke='%23D3D5CF' stroke-width='1'/%3E%3Ccircle cx='40' cy='0' r='14.4' fill='none' stroke='%23D3D5CF' stroke-width='1'/%3E%3Ccircle cx='40' cy='0' r='9.2' fill='none' stroke='%23D3D5CF' stroke-width='1'/%3E%3Ccircle cx='40' cy='0' r='4' fill='none' stroke='%23D3D5CF' stroke-width='1'/%3E%3Ccircle cx='20' cy='10' r='20' fill='%23F7F7F4'/%3E%3Ccircle cx='20' cy='10' r='19' fill='none' stroke='%23D3D5CF' stroke-width='1'/%3E%3Ccircle cx='20' cy='10' r='14.4' fill='none' stroke='%23D3D5CF' stroke-width='1'/%3E%3Ccircle cx='20' cy='10' r='9.2' fill='none' stroke='%23D3D5CF' stroke-width='1'/%3E%3Ccircle cx='20' cy='10' r='4' fill='none' stroke='%23D3D5CF' stroke-width='1'/%3E%3Ccircle cx='0' cy='20' r='20' fill='%23F7F7F4'/%3E%3Ccircle cx='0' cy='20' r='19' fill='none' stroke='%23D3D5CF' stroke-width='1'/%3E%3Ccircle cx='0' cy='20' r='14.4' fill='none' stroke='%23D3D5CF' stroke-width='1'/%3E%3Ccircle cx='0' cy='20' r='9.2' fill='none' stroke='%23D3D5CF' stroke-width='1'/%3E%3Ccircle cx='0' cy='20' r='4' fill='none' stroke='%23D3D5CF' stroke-width='1'/%3E%3Ccircle cx='40' cy='20' r='20' fill='%23F7F7F4'/%3E%3Ccircle cx='40' cy='20' r='19' fill='none' stroke='%23D3D5CF' stroke-width='1'/%3E%3Ccircle cx='40' cy='20' r='14.4' fill='none' stroke='%23D3D5CF' stroke-width='1'/%3E%3Ccircle cx='40' cy='20' r='9.2' fill='none' stroke='%23D3D5CF' stroke-width='1'/%3E%3Ccircle cx='40' cy='20' r='4' fill='none' stroke='%23D3D5CF' stroke-width='1'/%3E%3Ccircle cx='20' cy='30' r='20' fill='%23F7F7F4'/%3E%3Ccircle cx='20' cy='30' r='19' fill='none' stroke='%23D3D5CF' stroke-width='1'/%3E%3Ccircle cx='20' cy='30' r='14.4' fill='none' stroke='%23D3D5CF' stroke-width='1'/%3E%3Ccircle cx='20' cy='30' r='9.2' fill='none' stroke='%23D3D5CF' stroke-width='1'/%3E%3Ccircle cx='20' cy='30' r='4' fill='none' stroke='%23D3D5CF' stroke-width='1'/%3E%3C/svg%3E");
+  --paper:#F7F7F4; --paper-2:#EEEEE9; --card:#FDFDFB;
+  --ink:#1C2433; --ink-2:#4A5263; --line:#D9DAD5;
+  --shu:#B8391F; --on-shu:#FFFFFF;
+  --mincho:"Noto Serif JP","Hiragino Mincho ProN","Yu Mincho",YuMincho,serif;
+  --gothic:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP","Noto Sans CJK JP","Yu Gothic Medium","YuGothic Medium","Yu Gothic",YuGothic,Meiryo,sans-serif;
+  --mincho-sys:"Hiragino Mincho ProN","Yu Mincho",YuMincho,"Noto Serif CJK JP",serif;
+  --latin:"Bodoni Moda","Noto Serif JP",serif;
+  --wrap:1200px; --gut:clamp(16px,4vw,40px); --r:2px;
+  color-scheme:light dark;
+}
+@media (prefers-color-scheme:dark){:root{
+  --wagara:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='20' viewBox='0 0 40 20'%3E%3Ccircle cx='20' cy='-10' r='20' fill='%2314181F'/%3E%3Ccircle cx='20' cy='-10' r='19' fill='none' stroke='%232E3542' stroke-width='1'/%3E%3Ccircle cx='20' cy='-10' r='14.4' fill='none' stroke='%232E3542' stroke-width='1'/%3E%3Ccircle cx='20' cy='-10' r='9.2' fill='none' stroke='%232E3542' stroke-width='1'/%3E%3Ccircle cx='20' cy='-10' r='4' fill='none' stroke='%232E3542' stroke-width='1'/%3E%3Ccircle cx='0' cy='0' r='20' fill='%2314181F'/%3E%3Ccircle cx='0' cy='0' r='19' fill='none' stroke='%232E3542' stroke-width='1'/%3E%3Ccircle cx='0' cy='0' r='14.4' fill='none' stroke='%232E3542' stroke-width='1'/%3E%3Ccircle cx='0' cy='0' r='9.2' fill='none' stroke='%232E3542' stroke-width='1'/%3E%3Ccircle cx='0' cy='0' r='4' fill='none' stroke='%232E3542' stroke-width='1'/%3E%3Ccircle cx='40' cy='0' r='20' fill='%2314181F'/%3E%3Ccircle cx='40' cy='0' r='19' fill='none' stroke='%232E3542' stroke-width='1'/%3E%3Ccircle cx='40' cy='0' r='14.4' fill='none' stroke='%232E3542' stroke-width='1'/%3E%3Ccircle cx='40' cy='0' r='9.2' fill='none' stroke='%232E3542' stroke-width='1'/%3E%3Ccircle cx='40' cy='0' r='4' fill='none' stroke='%232E3542' stroke-width='1'/%3E%3Ccircle cx='20' cy='10' r='20' fill='%2314181F'/%3E%3Ccircle cx='20' cy='10' r='19' fill='none' stroke='%232E3542' stroke-width='1'/%3E%3Ccircle cx='20' cy='10' r='14.4' fill='none' stroke='%232E3542' stroke-width='1'/%3E%3Ccircle cx='20' cy='10' r='9.2' fill='none' stroke='%232E3542' stroke-width='1'/%3E%3Ccircle cx='20' cy='10' r='4' fill='none' stroke='%232E3542' stroke-width='1'/%3E%3Ccircle cx='0' cy='20' r='20' fill='%2314181F'/%3E%3Ccircle cx='0' cy='20' r='19' fill='none' stroke='%232E3542' stroke-width='1'/%3E%3Ccircle cx='0' cy='20' r='14.4' fill='none' stroke='%232E3542' stroke-width='1'/%3E%3Ccircle cx='0' cy='20' r='9.2' fill='none' stroke='%232E3542' stroke-width='1'/%3E%3Ccircle cx='0' cy='20' r='4' fill='none' stroke='%232E3542' stroke-width='1'/%3E%3Ccircle cx='40' cy='20' r='20' fill='%2314181F'/%3E%3Ccircle cx='40' cy='20' r='19' fill='none' stroke='%232E3542' stroke-width='1'/%3E%3Ccircle cx='40' cy='20' r='14.4' fill='none' stroke='%232E3542' stroke-width='1'/%3E%3Ccircle cx='40' cy='20' r='9.2' fill='none' stroke='%232E3542' stroke-width='1'/%3E%3Ccircle cx='40' cy='20' r='4' fill='none' stroke='%232E3542' stroke-width='1'/%3E%3Ccircle cx='20' cy='30' r='20' fill='%2314181F'/%3E%3Ccircle cx='20' cy='30' r='19' fill='none' stroke='%232E3542' stroke-width='1'/%3E%3Ccircle cx='20' cy='30' r='14.4' fill='none' stroke='%232E3542' stroke-width='1'/%3E%3Ccircle cx='20' cy='30' r='9.2' fill='none' stroke='%232E3542' stroke-width='1'/%3E%3Ccircle cx='20' cy='30' r='4' fill='none' stroke='%232E3542' stroke-width='1'/%3E%3C/svg%3E");
+  --paper:#14181F; --paper-2:#1A1F28; --card:#1E2430;
+  --ink:#ECEDEA; --ink-2:#A9B0BC; --line:#2E3542;
+  --shu:#F2765C; --on-shu:#14181F;
+}}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--gothic);font-size:16px;line-height:1.75;letter-spacing:.05em;line-break:strict;overflow-wrap:anywhere}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-underline-offset:.25em;text-decoration-thickness:1px}
+:focus-visible{outline:2px solid var(--shu);outline-offset:3px}
+h1,h2,h3,h4{font-family:var(--mincho);font-weight:700;line-height:1.45;letter-spacing:.08em;margin:0;word-break:keep-all;overflow-wrap:anywhere;text-wrap:balance}
+.deck,.coverlines b,.series li{word-break:keep-all;overflow-wrap:anywhere}
+@supports (word-break:auto-phrase){h2,h3,h4,.coverlines b,.contents .t,.deck,.series li{word-break:auto-phrase}}
+.nw{white-space:nowrap}
+.m0{margin:0}
+p{margin:0 0 1em;line-break:strict}
+.note-body p,.theme-txt>p:not(.notice),.policy p{text-align:justify}
+p,.contents .d,.coverlines small,.area dd,.ev dd{text-wrap:pretty}
+.contents .d,.coverlines small,.notice,.area dd,.res .meta,.disclaimer,.ev dd small,.quick span,.deck{word-break:auto-phrase}
+.tag.tag-shu{border-color:var(--shu);color:var(--shu);font-weight:700;align-self:center}
+figure figcaption{font-size:12px;color:var(--ink-2);margin-top:8px;letter-spacing:.06em}
+.cover-photo img,.theme figure img,.area-ph img,.note-ph img{filter:saturate(.9)}
+p:last-child{margin-bottom:0}
+ul,ol{margin:0;padding:0;list-style:none}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gut)}
+.en{font-family:var(--latin);font-weight:500;letter-spacing:.04em}
+.muted{color:var(--ink-2)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.skip{position:absolute;left:8px;top:-60px;background:var(--ink);color:var(--paper);padding:8px 12px;z-index:30}
+.skip:focus{top:8px}
+.tag{display:inline-block;font-size:12px;line-height:1;padding:5px 7px 4px;border:1px solid var(--line);color:var(--ink-2);letter-spacing:.08em;white-space:nowrap}
+
+/* header (z: 20 header, 30 skip, dialog uses top layer) */
+@supports not (background:color-mix(in srgb,red 50%,blue)){.hd{background:var(--paper)!important}}
+.hd{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.hd .wrap{display:flex;align-items:center;gap:24px;height:60px}
+.logo{display:flex;align-items:baseline;gap:12px;text-decoration:none}
+.hd .logo{transition:opacity .3s,visibility .3s}
+.hd.on-cover .logo{opacity:0;visibility:hidden}
+.logo b{font-family:var(--latin);font-size:22px;font-weight:700;letter-spacing:.06em}
+.logo small{font-size:11px;color:var(--ink-2);letter-spacing:.12em}
+.hd nav{margin-left:auto;display:flex;gap:4px}
+.hd nav a{font-size:13px;text-decoration:none;padding:12px 10px;white-space:nowrap}
+.hd nav a span{font-family:var(--latin);color:var(--shu);margin-right:4px}
+.hd nav a:hover{color:var(--shu)}
+.toc-btn{font:inherit;font-size:13px;letter-spacing:.1em;background:var(--ink);color:var(--paper);border:0;border-radius:var(--r);min-height:44px;padding:0 16px;cursor:pointer}
+.toc-btn:active{transform:translateY(1px)}
+.toc-btn,.logo{flex-shrink:0;white-space:nowrap}
+@media (max-width:1199px){.logo small{display:none}}
+@media (max-width:959px){.hd nav{display:none}.toc-btn{margin-left:auto}.logo small{display:none}}
+.progress{position:absolute;left:0;bottom:-1px;height:2px;width:100%;background:var(--shu);transform-origin:0 50%;transform:scaleX(0)}
+@supports (animation-timeline:scroll()){
+  @media (prefers-reduced-motion:no-preference){
+    .progress{animation:grow linear both;animation-timeline:scroll(root)}
+    @keyframes grow{to{transform:scaleX(1)}}
+  }
+}
+
+/* toc dialog */
+dialog:not([open]){display:none}
+.toc-title{font-size:22px;margin:0}
+.toc .contents .d{display:none}
+dialog.toc{border:0;padding:0;margin:0 0 0 auto;height:100vh;height:100dvh;overscroll-behavior:contain;max-height:none;width:min(420px,100vw);background:var(--paper);color:var(--ink)}
+dialog.toc::backdrop{background:rgb(10 14 20 / .45)}
+.toc-in{padding:20px 24px 32px}
+.toc-in{min-height:100%}
+.toc-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.toc-close{font:inherit;background:none;border:1px solid var(--line);color:var(--ink);min-width:44px;min-height:44px;border-radius:var(--r);cursor:pointer}
+
+/* section rhythm */
+.sec{padding:clamp(64px,10vw,120px) 0}
+.sec-alt{background:var(--paper-2)}
+.sec-head{display:flex;flex-wrap:wrap;align-items:flex-end;gap:4px 16px;margin-bottom:clamp(28px,4vw,48px)}
+.sec-head h2{font-size:clamp(24px,3.2vw,34px)}
+.sec-head .en{font-size:15px;color:var(--ink-2);padding-bottom:6px;white-space:nowrap}
+.lede{max-width:34em;color:var(--ink-2);margin-bottom:32px;word-break:auto-phrase;text-wrap:balance}
+
+/* wagara: bounded seigaiha strip */
+.seigaiha{height:28px;background:var(--wagara) repeat-x left bottom/40px 20px;border-bottom:1px solid var(--line)}
+
+/* cover */
+.cover{padding:clamp(20px,3vw,36px) 0 clamp(40px,6vw,72px)}
+.cover-top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:8px 16px;border-bottom:2px solid var(--ink);padding-bottom:8px}
+.masthead{font-family:var(--latin);font-weight:700;font-size:clamp(40px,10.4vw,150px);line-height:.86;letter-spacing:-.01em;margin:0;overflow-wrap:normal}
+@media (max-width:359px){.masthead{font-size:40px}}
+.issue{font-size:13px;text-align:right;line-height:1.6;margin:0;letter-spacing:.1em}
+.issue .en{display:block;font-size:20px;color:var(--shu)}
+.deck-lead{font-size:1.35em;margin-right:.6em;color:var(--shu)}
+.ragged{text-align:start!important}
+.quick small{display:block;font-size:12px;margin-top:2px}
+.quick small a{font-size:13px;min-height:0;color:inherit;font-weight:400;display:inline-block;padding:13px 4px;margin:-13px -4px;text-decoration:underline}
+.deck{flex-basis:100%;margin:6px 0 0;font-family:var(--mincho);font-weight:700;font-size:clamp(15px,1.7vw,18px);letter-spacing:.12em}
+.cover-body{display:grid;grid-template-columns:1fr auto;gap:clamp(12px,2vw,28px);margin-top:clamp(16px,2.4vw,28px)}
+.cover-photo{margin:0;display:flex;flex-direction:column}
+.cover-photo .ph{position:relative;flex:1;min-height:440px;background:var(--paper-2)}
+.cover-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 100%}
+.tate{writing-mode:vertical-rl;text-orientation:mixed;font-feature-settings:"vert","vrt2"}
+.cover h1{font-size:clamp(24px,2.6vw,38px);line-height:1.6;letter-spacing:.12em;font-weight:700;margin:0;align-self:start;text-wrap:initial;word-break:normal}
+@media (max-height:500px) and (orientation:landscape){.masthead{font-size:clamp(40px,12svh,150px)}.cover h1{font-size:20px}.cover-photo .ph{min-height:300px}}
+@media (max-width:599px) and (max-height:700px){.cover h1{font-size:21px}.cover-photo .ph{min-height:340px}.deck{font-size:14px}}
+.cover h1 .shu{color:var(--shu)}
+.coverlines{grid-column:1/-1;display:grid;gap:0;border-top:1px solid var(--line)}
+.coverlines a{display:grid;grid-template-columns:40px 1fr;align-items:baseline;gap:12px;padding:14px 0;border-bottom:1px solid var(--line);text-decoration:none;min-height:44px}
+.coverlines .n{font-family:var(--latin);font-size:22px;color:var(--shu)}
+.coverlines b{word-break:auto-phrase;font-family:var(--mincho);font-size:clamp(16px,1.6vw,19px);letter-spacing:.08em}
+.coverlines small{grid-column:2;font-size:12px;color:var(--ink-2)}
+@media (max-width:599px){.issue{text-align:left}.issue .en{display:inline;margin-left:10px}}
+.coverlines a:hover b{color:var(--shu)}
+@media (min-width:960px){
+  .cover-body{grid-template-columns:minmax(0,1fr) auto minmax(300px,360px);align-items:stretch}
+  .cover-photo .ph{min-height:clamp(400px,calc(100svh - 330px),620px)}
+  .coverlines{grid-column:auto;border-top:0;align-content:end}
+}
+
+/* contents (magazine 目次 with dotted leaders) */
+.contents{display:grid;gap:0;counter-reset:c}
+.contents a{display:grid;grid-template-columns:64px 1fr;gap:4px 16px;padding:18px 0;border-top:1px solid var(--line);text-decoration:none}
+.contents li:last-child a{border-bottom:1px solid var(--line)}
+.contents .n{grid-row:span 2;font-family:var(--latin);font-size:40px;line-height:1;color:var(--shu)}
+.contents .t{display:flex;align-items:baseline;gap:12px;font-family:var(--mincho);font-weight:700;font-size:clamp(17px,1.7vw,20px);letter-spacing:.06em}
+.contents .t::after{content:"";flex:1;border-bottom:1px dotted var(--ink-2);transform:translateY(-.3em);min-width:24px}
+.contents .t .en{order:2;font-size:14px;font-weight:500;color:var(--ink-2);font-family:var(--latin);white-space:nowrap}
+.contents .d{font-size:14px;color:var(--ink-2)}
+.contents a:hover .t{color:var(--shu)}
+@media (max-width:599px){#contents{display:none}}
+@media (max-width:599px){.contents .t::after,.contents .t .en{display:none}}
+@media (min-width:960px){#contents .contents{grid-template-columns:1fr 1fr;column-gap:56px}#contents .contents li:nth-last-child(2) a{border-bottom:1px solid var(--line)}}
+.toc .contents a{grid-template-columns:44px 1fr;padding:12px 0}
+.toc .contents .n{font-size:26px}
+.toc .contents .t{font-size:16px}
+
+/* editor's note */
+.note{display:grid;gap:32px}
+.note .kicker{font-family:var(--mincho);font-size:26px;font-weight:700;letter-spacing:.3em;margin:0}
+.note-body{max-width:33em;font-family:var(--mincho-sys);font-size:17px;line-height:2.05}
+.note-sign{margin-top:28px;text-align:right;font-family:var(--gothic);font-size:14px}
+.note-ph{margin:0;max-width:340px}
+.note-ph img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.note-ph figcaption{font-size:12px;color:var(--ink-2);margin-top:8px}
+@media (max-width:959px){.note .kicker{letter-spacing:.12em}}
+@media (min-width:960px){.note{grid-template-columns:auto minmax(0,1fr) 300px;gap:64px;align-items:start}.note .kicker{writing-mode:vertical-rl}}
+
+/* themes */
+.theme{display:grid;gap:24px;padding:clamp(40px,6vw,72px) 0;border-top:1px solid var(--line)}
+.theme:first-of-type{border-top:0;padding-top:0}
+.theme-no{white-space:nowrap;overflow-wrap:normal;letter-spacing:0;font-family:var(--latin);font-size:clamp(64px,8vw,104px);line-height:.8;color:var(--shu);margin:0}
+.theme h3{font-size:clamp(22px,2.6vw,30px)}
+.theme h3 .en{display:block;font-size:15px;color:var(--ink-2);margin-top:6px;letter-spacing:.06em;font-weight:500}
+.theme-txt>p{max-width:34em;margin-top:16px}
+.theme figure{margin:0}
+.theme figure img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.series{margin-top:24px;border-top:1px solid var(--ink)}
+.series li{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:12px 0;border-bottom:1px solid var(--line);font-family:var(--mincho);font-weight:700}
+.series-cap{font-size:12px;color:var(--ink-2);margin:28px 0 0;letter-spacing:.12em}
+.series-cap+.series{margin-top:8px}
+.series-cap.first{margin-top:0}
+.notice{margin-top:20px;padding:14px 16px;border:1px solid var(--line);border-left:3px solid var(--shu);background:var(--card);font-size:14px}
+@media (min-width:960px){
+  .theme{grid-template-columns:140px minmax(0,1fr) minmax(0,1fr);column-gap:48px;align-items:start}
+  .theme.flip figure{grid-column:2;grid-row:1}
+  .theme.flip .theme-no{grid-column:1;grid-row:1}
+  .theme.flip .theme-txt{grid-column:3;grid-row:1}
+  .theme.wide{grid-template-columns:140px minmax(0,1fr)}
+  .theme.wide .theme-no{grid-column:1;grid-row:1}
+  .theme.wide figure{grid-column:2;grid-row:1}
+  .theme.wide figure img{aspect-ratio:21/9}
+  .theme.wide .theme-txt{grid-column:2;grid-row:2;display:grid;grid-template-columns:1fr 1fr;column-gap:48px;align-items:start}
+  .theme.wide .theme-txt>h3{grid-column:1;grid-row:1}
+  .theme.wide .theme-txt>p:not(.series-cap){grid-column:1;grid-row:2}
+  .theme.wide .theme-txt>.series-cap{grid-column:2;grid-row:1;margin-top:0;align-self:end}
+  .theme.wide .theme-txt>.series{grid-column:2;grid-row:2}
+}
+
+/* areas: horizontal scroll-snap cards with kanji marks */
+.areas{display:grid;grid-auto-flow:column;grid-auto-columns:min(78%,300px);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:var(--gut);padding:4px var(--gut) 20px;margin:0 calc(var(--gut) * -1);scrollbar-width:thin}
+.area{scroll-snap-align:start;background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.area-ph{margin:0;aspect-ratio:3/2;background:var(--paper-2)}
+.area-ph img{width:100%;height:100%;object-fit:cover}
+.area-in{flex:1;display:grid;grid-template-columns:auto 1fr;grid-template-rows:auto auto 1fr;gap:12px 14px;align-items:center;padding:20px 22px 22px}
+.area-in>p,.area-in>dl{grid-column:1/-1}
+.area-in>dl{align-self:end}
+.area .kanji{font-family:var(--mincho);font-weight:700;font-size:44px;line-height:1;color:var(--shu)}
+.area h3{font-size:19px}
+.area h3 small{display:block;font-family:var(--gothic);font-weight:400;font-size:12px;color:var(--ink-2);letter-spacing:.06em;margin-top:2px}
+.area p{font-size:15px;margin:0}
+.area dl{margin:0;font-size:13px;display:grid;grid-template-columns:auto 1fr;gap:4px 10px;padding-top:12px;border-top:1px solid var(--line)}
+.area dt{color:var(--ink-2)}
+.area dd:last-child{word-break:keep-all}
+.res p,.area p{word-break:auto-phrase}
+@media (max-width:959px){.area-ph{content-visibility:auto}}
+@media (min-width:960px){.areas{grid-auto-flow:row;grid-template-columns:repeat(3,1fr);overflow:visible;margin:0;padding:0;gap:20px}}
+.area dd{margin:0}
+
+/* season calendar: current season full row, other three below */
+.cal{display:grid;gap:16px}
+.season{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.season h3{display:flex;align-items:baseline;gap:12px;font-size:24px;margin-bottom:12px}
+.season h3 .en{font-size:14px;color:var(--ink-2);font-weight:500}
+.season .now{display:none;margin-left:auto;font-family:var(--gothic);font-size:12px;background:var(--shu);color:var(--on-shu);padding:4px 8px;letter-spacing:.1em;font-weight:700}
+.season.is-now{grid-column:1/-1;border-color:var(--shu)}
+.season.is-now .now{display:inline-block}
+.ev{display:grid;grid-template-columns:4.2em 1fr;gap:6px 12px;font-size:15px}
+.ev dt{font-family:var(--latin);color:var(--shu);font-weight:700}
+.ev dd{margin:0}
+.ev .past{color:var(--ink-2)}
+.ev dt.past .tag{border-color:var(--line);color:var(--ink-2)}
+.ev dt.past{font-weight:500}
+.ev .tag{margin-left:6px;font-family:var(--gothic);font-size:11px;padding:3px 5px 2px;border-color:var(--shu);color:var(--shu)}
+.health-memo{margin-top:16px;padding-top:12px;border-top:1px dashed var(--line);font-size:14px;color:var(--ink-2)}
+.health-memo b{color:var(--ink)}
+@media (min-width:768px){.cal{grid-template-columns:repeat(3,1fr)}.season.is-now .ev{grid-template-columns:4.2em 1fr 4.2em 1fr}}
+
+/* unwell: dense resource cards */
+.unwell{position:relative;border:2px solid var(--ink);border-radius:var(--r);background:var(--card);padding:clamp(20px,3vw,40px)}
+.u-alert{display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px;background:var(--shu);color:var(--on-shu);padding:16px 20px;border-radius:var(--r);margin-bottom:24px}
+.u-alert a:focus-visible{outline-color:var(--on-shu)}
+.u-alert b{font-size:18px;letter-spacing:.08em}
+.u-alert a{font-family:var(--gothic);font-weight:700;letter-spacing:.02em;font-size:30px;line-height:1;text-decoration:none;color:inherit;min-height:44px;display:inline-flex;align-items:center}
+.quick{margin:0 0 24px;border-top:1px solid var(--line)}
+.quick li{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:4px 0;border-bottom:1px solid var(--line)}
+.quick span{font-size:13px;color:var(--ink-2)}
+.quick a{font-weight:700;font-size:22px;color:var(--shu);text-decoration:none;min-height:44px;display:inline-flex;align-items:center;white-space:nowrap;letter-spacing:.02em}
+.res{display:grid;gap:12px}
+.res li{display:grid;grid-template-columns:1fr;gap:6px;padding:16px 0;border-top:1px solid var(--line)}
+.res h3{font-size:17px;font-family:var(--gothic)}
+.res .num{font-family:var(--gothic);font-weight:700;letter-spacing:.02em;font-size:28px;line-height:1.1;color:var(--shu);text-decoration:none;display:inline-flex;align-items:center;min-height:44px;width:fit-content}
+.res .meta{font-size:13px;color:var(--ink-2);margin:0}
+.res p{margin:0}
+.res .web{font-weight:700;font-size:17px;display:inline-flex;align-items:center;min-height:44px;width:fit-content;color:var(--shu)}
+.res .meta a[href^="tel:"]{display:inline-block;padding:13px 4px;margin:-13px -4px}
+.quick-note{font-size:12px;color:var(--ink-2);margin:-12px 0 20px}
+@media (min-width:768px){.res{grid-template-columns:1fr 1fr;column-gap:40px}}
+.disclaimer{font-size:13px;color:var(--ink-2);margin-top:20px}
+
+/* checklist */
+.check-wrap{display:grid;gap:24px}
+.check-grp{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px 22px}
+.check-grp h3{font-size:19px;margin-bottom:8px}
+.check-grp label{display:grid;grid-template-columns:24px 1fr;gap:12px;align-items:start;padding:10px 0;border-top:1px solid var(--line);cursor:pointer;min-height:44px;font-size:15px}
+.check-grp label:first-of-type{border-top:0}
+.check-grp input{width:20px;height:20px;margin:3px 0 0;accent-color:var(--shu)}
+.check-grp label>span{word-break:auto-phrase}
+.check-grp small{display:block;color:var(--ink-2);font-size:13px}
+.check-grp input:checked+span{color:var(--ink-2);text-decoration:line-through;text-decoration-color:var(--shu)}
+.check-count{font-size:14px;margin:0 0 16px}
+.check-count b{font-family:var(--latin);font-size:22px;color:var(--shu)}
+@media (min-width:960px){.check-wrap{grid-template-columns:repeat(3,1fr)}}
+
+.copy-link{font:inherit;font-size:13px;background:none;border:1px solid var(--line);color:var(--ink);border-radius:var(--r);min-height:44px;padding:0 14px;cursor:pointer;margin-top:20px}
+
+/* policy */
+.policy{display:grid;gap:28px;font-size:14px}
+.policy h3{font-family:var(--gothic);font-size:15px;margin-bottom:8px;padding-left:10px;border-left:3px solid var(--shu)}
+@media (min-width:768px){.policy{grid-template-columns:1fr 1fr}}
+@media (min-width:1100px){.policy{grid-template-columns:repeat(3,1fr)}}
+
+/* footer */
+.ft{padding:48px 0 40px;font-size:13px}
+.ft .wrap{display:grid;gap:20px}
+.ft .logo b{font-size:28px}
+.ft p{word-break:auto-phrase}
+.ft-row{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:space-between}
+.ft-wave{margin-bottom:40px}
+.ft-actions{display:flex;gap:8px;flex-wrap:wrap}
+.totop{display:inline-flex;align-items:center;min-height:44px;padding:0 6px}
+html:not(.js) .toc-btn,html:not(.js) .copy-link,html:not(.js) #share{display:none}
+@media print{.js .rv{opacity:1!important;transform:none!important}.hd,.copy-link,.ft button,.seigaiha,dialog{display:none!important}}
+.ft button{font:inherit;background:none;border:1px solid var(--line);color:var(--ink);border-radius:var(--r);min-height:44px;padding:0 14px;cursor:pointer}
+
+/* reveal: content is visible without JS; only enhanced when JS adds .js */
+@media (prefers-reduced-motion:no-preference){
+  .js .rv{opacity:0;transform:translateY(16px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
+  .js .rv.in{opacity:1;transform:none}
+  .cover .masthead,.cover-photo{animation:rise .9s cubic-bezier(.16,1,.3,1) both}
+  .cover-photo{animation-delay:.05s}
+  @keyframes rise{from{opacity:0;transform:translateY(12px)}}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://osakadou.live/#website", "url": "https://osakadou.live/", "name": "OSAKA LIVE", "alternateName": "オオサカライブ", "inLanguage": "ja", "publisher": {"@id": "https://osakadou.live/#org"}}, {"@type": ["Organization", "NewsMediaOrganization"], "@id": "https://osakadou.live/#org", "name": "OSAKA LIVE", "alternateName": "オオサカライブ", "url": "https://osakadou.live/", "logo": {"@type": "ImageObject", "url": "https://osakadou.live/logo-512.png", "width": 512, "height": 512}, "publishingPrinciples": "https://osakadou.live/#policy", "correctionsPolicy": "https://osakadou.live/#policy", "ethicsPolicy": "https://osakadou.live/#policy"}, {"@type": "WebPage", "@id": "https://osakadou.live/#webpage", "url": "https://osakadou.live/", "name": "大阪の暮らし・健康・美容のWebマガジン｜OSAKA LIVE", "description": "大阪で暮らす人のためのWebマガジン「OSAKA LIVE（オオサカライブ）」。休日・夜間の医療相談先（#7119・#8000）、祭りと体調の季節カレンダー、防災・ごみ・転入の12項目チェックリストを、公的な出典つきでまとめました。", "inLanguage": "ja", "isPartOf": {"@id": "https://osakadou.live/#website"}, "about": {"@type": "City", "name": "大阪市", "sameAs": "https://www.wikidata.org/wiki/Q35765"}, "primaryImageOfPage": "https://osakadou.live/og-cover.jpg", "dateModified": "2026-10-31"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">本文へ移動</a>
+<header class="hd">
+  <div class="wrap">
+    <a class="logo" href="#top"><b>OSAKA LIVE</b><small>大阪の暮らしマガジン</small></a>
+    <nav aria-label="セクション">
+      <a href="#areas"><span>01</span>エリア</a>
+      <a href="#unwell"><span>02</span>相談先</a>
+      <a href="#calendar"><span>03</span>カレンダー</a>
+      <a href="#checklist"><span>04</span>チェックリスト</a>
+      <a href="#themes"><span>05</span>連載</a>
+    </nav>
+    <button class="toc-btn" id="toc-open" type="button" aria-haspopup="dialog" aria-controls="toc">目次</button>
+  </div>
+  <div class="progress" aria-hidden="true"></div>
+</header>
+
+<dialog class="toc" id="toc" aria-labelledby="toc-title">
+  <div class="toc-in">
+    <div class="toc-head">
+      <p id="toc-title" class="en toc-title" lang="en">Contents</p>
+      <button class="toc-close" id="toc-close" type="button" aria-label="目次を閉じる">×</button>
+    </div>
+    <nav aria-label="目次" id="toc-nav"></nav>
+  </div>
+</dialog>
+
+<main id="main">
+<section class="cover" id="top">
+  <div class="wrap">
+    <div class="cover-top">
+      <p class="masthead" lang="en">OSAKA LIVE</p>
+      <p class="issue">創刊準備号<span class="en" lang="en">Autumn 2026</span></p>
+      <p class="deck"><span class="deck-lead">大阪で、暮らす。</span>住む人の<wbr>目線で、<wbr>出典を<wbr>明記して<wbr>書く<wbr>Webマガジン。</p>
+    </div>
+    <div class="cover-body">
+      <figure class="cover-photo">
+        <div class="ph"><picture><source media="(min-width:960px)" sizes="(min-width:1280px) 600px, 47vw" srcset="https://images.unsplash.com/photo-1772249491195-e95a8a5ed845?auto=format&fit=crop&crop=bottom&q=50&w=600&h=600 600w, https://images.unsplash.com/photo-1772249491195-e95a8a5ed845?auto=format&fit=crop&crop=bottom&q=50&w=900&h=900 900w"><img src="https://images.unsplash.com/photo-1772249491195-e95a8a5ed845?auto=format&fit=crop&crop=bottom&q=45&w=540&h=810" srcset="https://images.unsplash.com/photo-1772249491195-e95a8a5ed845?auto=format&fit=crop&crop=bottom&q=45&w=400&h=600 400w, https://images.unsplash.com/photo-1772249491195-e95a8a5ed845?auto=format&fit=crop&crop=bottom&q=45&w=540&h=810 540w" sizes="calc(100vw - 121px)" width="540" height="810" alt="黄葉したイチョウの下を歩く親子の後ろ姿" fetchpriority="high"></picture></div>
+        <figcaption>黄葉の大阪城公園（中央区）</figcaption>
+      </figure>
+      <h1 class="tate">大阪の暮らし・健康・美容を、<br><span class="shu">もっと身近に。</span></h1>
+      <ol class="coverlines" aria-label="この号の特集">
+        <li><a href="#areas"><span class="n">01</span><b>大阪の<wbr>「ふだん」を<wbr>歩く</b><small>キタ・ミナミから天満まで、6エリアの横顔</small></a></li>
+        <li><a href="#unwell"><span class="n">02</span><b>近所の<wbr>お医者さん、<wbr>どう探す？</b><small>#7119から休日の診療所まで、相談先の一覧</small></a></li>
+        <li><a href="#calendar"><span class="n">03</span><b>この季節の<wbr>大阪、<wbr>なにがある？</b><small>祭りと行事と、季節の体調メモ</small></a></li>
+        <li><a href="#checklist"><span class="n">04</span><b>ごみの日、<wbr>いつ<wbr>やったっけ？</b><small>防災・医療・手続きを12項目でチェック</small></a></li>
+        <li><a href="#themes"><span class="n">05</span><b>これから<wbr>始まる、<wbr>15の連載</b><small>大阪の「おもろい」ひとから、キレイの話まで</small></a></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<div class="seigaiha" aria-hidden="true"></div>
+
+<section class="sec" id="contents" aria-labelledby="h-contents">
+  <div class="wrap">
+    <div class="sec-head"><h2 id="h-contents">この号の目次</h2><span class="en" lang="en">Contents</span></div>
+    <p class="lede rv">創刊準備号の目次です。連載は、準備が整ったものから順次公開していきます。気になるところから、どうぞ。</p>
+    <ol class="contents"><li><a href="#areas"><span class="n">01</span><span class="t">大阪<wbr>エリアガイド<span class="en" lang="en">Area Guide</span></span><span class="d">キタ・ミナミから天満まで、6エリアの横顔。</span></a></li><li><a href="#unwell"><span class="n">02</span><span class="t">体調が<wbr>すぐれない<wbr>ときの<wbr>相談先<span class="en" lang="en">Help Lines</span></span><span class="d">救急や電話相談など、公的な窓口の一覧。</span></a></li><li><a href="#calendar"><span class="n">03</span><span class="t">大阪の<wbr>季節カレンダー<span class="en" lang="en">Seasonal Calendar</span></span><span class="d">祭りや行事と、季節ごとの体調メモ。</span></a></li><li><a href="#checklist"><span class="n">04</span><span class="t">大阪暮らし<wbr>チェックリスト<span class="en" lang="en">Living Checklist</span></span><span class="d">防災・医療・手続きを12項目で確認。</span></a></li><li><a href="#themes"><span class="n">05</span><span class="t">5つのテーマと、<wbr>これからの連載<span class="en" lang="en">Five Themes</span></span><span class="d">暮らし・健康・美容・カルチャー・ガイドの、15の連載。</span></a></li><li><a href="#policy"><span class="n">06</span><span class="t">編集方針・<wbr>運営者情報<span class="en" lang="en">Editorial Policy</span></span><span class="d">記事のつくり方と、情報の扱いについて。</span></a></li></ol>
+  </div>
+</section>
+
+<section class="sec sec-alt" id="note" aria-labelledby="h-note">
+  <div class="wrap note">
+    <h2 class="kicker" id="h-note">編集部より</h2>
+    <div class="note-body rv">
+      <p>OSAKA LIVEは、大阪に住む人のためのWebマガジンです。朝の御堂筋線、夕方の商店街、休日の大川沿い。観光ガイドには載らない、毎日の大阪の話を届けます。</p>
+      <p>扱うテーマは5つ。街の暮らし、健康・医療、美容・ウェルネス、ひと・カルチャー、そして生活の実用ガイドです。制度や手続きの情報は、まず大阪市のものから扱います。創刊準備号では、これから始まる連載の予告と、大阪で暮らすうえで手元に置いておきたい基本情報をまとめました。</p>
+      <p>健康や美容の記事で扱うのは、病院の探し方や制度の使い方などの一般的な情報です。気になる症状があるときは、医療機関に相談してください。</p>
+      <p>記事は、国や大阪府・大阪市などの一次情報を確かめてから書き、出典を示します。制度や連絡先は変わることがあるため、見直した日付も記します。</p>
+      <p class="note-sign">2026年10月　OSAKA LIVE 編集部</p>
+    </div>
+    <figure class="note-ph rv"><img src="https://images.unsplash.com/photo-1772249491247-f84f243612ab?auto=format&fit=crop&q=45&ar=4:5&crop=entropy&w=600" srcset="https://images.unsplash.com/photo-1772249491247-f84f243612ab?auto=format&fit=crop&q=45&ar=4:5&crop=entropy&w=400 400w, https://images.unsplash.com/photo-1772249491247-f84f243612ab?auto=format&fit=crop&q=45&ar=4:5&crop=entropy&w=600 600w, https://images.unsplash.com/photo-1772249491247-f84f243612ab?auto=format&fit=crop&q=45&ar=4:5&crop=entropy&w=800 800w" sizes="(min-width:960px) 300px, 340px" width="1200" height="1500" alt="紅葉に包まれた箕面の赤い橋" loading="lazy" decoding="async"><figcaption>紅葉の箕面（箕面市）</figcaption></figure>
+  </div>
+</section>
+
+<section class="sec" id="areas" aria-labelledby="h-areas">
+  <div class="wrap">
+    <div class="sec-head"><h2 id="h-areas">大阪<wbr>エリアガイド</h2><span class="en" lang="en">Area Guide</span></div>
+    <p class="lede rv">キタとミナミだけやない。6つのエリアの横顔を、主な駅とあわせて紹介します。</p>
+    <div class="areas" role="region" aria-label="エリアガイド" tabindex="0">
+      <article class="area"><figure class="area-ph"><img src="https://images.unsplash.com/photo-1598559411608-e6dddb68e5f4?auto=format&fit=crop&q=55&ar=3:2&crop=entropy&w=600" srcset="https://images.unsplash.com/photo-1598559411608-e6dddb68e5f4?auto=format&fit=crop&q=55&ar=3:2&crop=entropy&w=400 400w, https://images.unsplash.com/photo-1598559411608-e6dddb68e5f4?auto=format&fit=crop&q=55&ar=3:2&crop=entropy&w=600 600w, https://images.unsplash.com/photo-1598559411608-e6dddb68e5f4?auto=format&fit=crop&q=55&ar=3:2&crop=entropy&w=800 800w" sizes="(min-width:960px) 360px, 280px" width="900" height="600" alt="見上げた梅田スカイビル" loading="lazy" decoding="async"></figure><div class="area-in"><span class="kanji" aria-hidden="true">北</span><h3>キタ<small>梅田・大阪駅周辺／北区</small></h3><p>JR大阪駅と梅田の各駅が集まる北の玄関口。高層ビルと迷路のような地下街、お初天神や阪急東通の飲み屋街が混ざり合う街です。</p><dl><dt>こんな日に</dt><dd>買い物も乗り換えも一度に済ませたい日</dd><dt>主な駅</dt><dd>大阪、梅田、東梅田、西梅田、大阪梅田、北新地</dd></dl></div></article>
+      <article class="area"><figure class="area-ph"><img src="https://images.unsplash.com/photo-1591115280721-38563b267cf5?auto=format&fit=crop&q=55&ar=3:2&crop=entropy&w=600" srcset="https://images.unsplash.com/photo-1591115280721-38563b267cf5?auto=format&fit=crop&q=55&ar=3:2&crop=entropy&w=400 400w, https://images.unsplash.com/photo-1591115280721-38563b267cf5?auto=format&fit=crop&q=55&ar=3:2&crop=entropy&w=600 600w, https://images.unsplash.com/photo-1591115280721-38563b267cf5?auto=format&fit=crop&q=55&ar=3:2&crop=entropy&w=800 800w" sizes="(min-width:960px) 360px, 280px" width="900" height="600" alt="昼の道頓堀川と川沿いの街並み" loading="lazy" decoding="async"></figure><div class="area-in"><span class="kanji" aria-hidden="true">南</span><h3>ミナミ<small>なんば・心斎橋／中央区・浪速区</small></h3><p>道頓堀の川沿いに看板が並び、心斎橋筋の商店街がなんばへと続く繁華街。劇場や飲食店も多く、夜遅くまでにぎわいます。</p><dl><dt>こんな日に</dt><dd>にぎやかな街を食べ歩きしたい日</dd><dt>主な駅</dt><dd>なんば、心斎橋、日本橋、大阪難波、JR難波</dd></dl></div></article>
+      <article class="area"><figure class="area-ph"><img src="https://images.unsplash.com/photo-1706861744486-dda76a322221?auto=format&fit=crop&q=55&ar=3:2&crop=entropy&w=600" srcset="https://images.unsplash.com/photo-1706861744486-dda76a322221?auto=format&fit=crop&q=55&ar=3:2&crop=entropy&w=400 400w, https://images.unsplash.com/photo-1706861744486-dda76a322221?auto=format&fit=crop&q=55&ar=3:2&crop=entropy&w=600 600w, https://images.unsplash.com/photo-1706861744486-dda76a322221?auto=format&fit=crop&q=55&ar=3:2&crop=entropy&w=800 800w" sizes="(min-width:960px) 360px, 280px" width="900" height="600" alt="中之島の大阪市中央公会堂" loading="lazy" decoding="async"></figure><div class="area-in"><span class="kanji" aria-hidden="true">中</span><h3>中之島・北浜<small>北区・中央区</small></h3><p>堂島川と土佐堀川に挟まれた中洲に、美術館や図書館、近代建築が並びます。対岸の北浜は、大阪取引所とレトロビルの並ぶ街です。</p><dl><dt>こんな日に</dt><dd>川沿いで建築と美術を眺める日</dd><dt>主な駅</dt><dd>淀屋橋、北浜、なにわ橋、大江橋、渡辺橋、中之島</dd></dl></div></article>
+      <article class="area"><figure class="area-ph"><img src="https://images.unsplash.com/photo-1775986351635-85d61169ed17?auto=format&fit=crop&q=55&ar=3:2&crop=entropy&w=600" srcset="https://images.unsplash.com/photo-1775986351635-85d61169ed17?auto=format&fit=crop&q=55&ar=3:2&crop=entropy&w=400 400w, https://images.unsplash.com/photo-1775986351635-85d61169ed17?auto=format&fit=crop&q=55&ar=3:2&crop=entropy&w=600 600w, https://images.unsplash.com/photo-1775986351635-85d61169ed17?auto=format&fit=crop&q=55&ar=3:2&crop=entropy&w=800 800w" sizes="(min-width:960px) 360px, 280px" width="900" height="600" alt="新世界の商店街と通天閣" loading="lazy" decoding="async"></figure><div class="area-in"><span class="kanji" aria-hidden="true">天</span><h3>天王寺・阿倍野<small>天王寺区・阿倍野区・浪速区</small></h3><p>天王寺公園や動物園、四天王寺のある街に、あべのハルカスが建つ南の拠点。通天閣の新世界へも歩いてすぐです。</p><dl><dt>こんな日に</dt><dd>公園と下町を気ままに歩く日</dd><dt>主な駅</dt><dd>天王寺、大阪阿部野橋、阿倍野、天王寺駅前、四天王寺前夕陽ケ丘</dd></dl></div></article>
+      <article class="area"><figure class="area-ph"><img src="https://images.unsplash.com/photo-1562118501-7b229c3dfcfb?auto=format&fit=crop&q=55&ar=3:2&crop=entropy&w=600" srcset="https://images.unsplash.com/photo-1562118501-7b229c3dfcfb?auto=format&fit=crop&q=55&ar=3:2&crop=entropy&w=400 400w, https://images.unsplash.com/photo-1562118501-7b229c3dfcfb?auto=format&fit=crop&q=55&ar=3:2&crop=entropy&w=600 600w, https://images.unsplash.com/photo-1562118501-7b229c3dfcfb?auto=format&fit=crop&q=55&ar=3:2&crop=entropy&w=800 800w" sizes="(min-width:960px) 360px, 280px" width="900" height="600" alt="大阪城と、堀をゆく御座船" loading="lazy" decoding="async"></figure><div class="area-in"><span class="kanji" aria-hidden="true">城</span><h3>京橋・大阪城<small>都島区・中央区</small></h3><p>大阪城公園の緑と石垣を望むエリア。京橋は複数の路線が交わる乗換駅で、駅前には飲食店が集まります。</p><dl><dt>こんな日に</dt><dd>お城のまわりを散歩したい日</dd><dt>主な駅</dt><dd>京橋、大阪城公園、森ノ宮、大阪ビジネスパーク、天満橋、谷町四丁目</dd></dl></div></article>
+      <article class="area"><figure class="area-ph"><img src="https://images.unsplash.com/photo-1585609332144-069e8576d9ca?auto=format&fit=crop&q=55&ar=3:2&crop=focalpoint&fp-x=0.4&fp-y=0.35&w=600" srcset="https://images.unsplash.com/photo-1585609332144-069e8576d9ca?auto=format&fit=crop&q=55&ar=3:2&crop=focalpoint&fp-x=0.4&fp-y=0.35&w=400 400w, https://images.unsplash.com/photo-1585609332144-069e8576d9ca?auto=format&fit=crop&q=55&ar=3:2&crop=focalpoint&fp-x=0.4&fp-y=0.35&w=600 600w, https://images.unsplash.com/photo-1585609332144-069e8576d9ca?auto=format&fit=crop&q=55&ar=3:2&crop=focalpoint&fp-x=0.4&fp-y=0.35&w=800 800w" sizes="(min-width:960px) 360px, 280px" width="900" height="600" alt="天神橋筋商店街「天神橋1丁目」の入口と買い物客" loading="lazy" decoding="async"></figure><div class="area-in"><span class="kanji" aria-hidden="true">宮</span><h3>天満・天神橋筋<small>北区</small></h3><p>大阪天満宮の門前町として育った、天神橋筋商店街のある街。アーケードが南北に長く続き、日々の買い物客でにぎわいます。</p><dl><dt>こんな日に</dt><dd>商店街で晩ごはんの買い物をする日</dd><dt>主な駅</dt><dd>南森町、大阪天満宮、扇町、天満、天神橋筋六丁目</dd></dl></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-alt" id="unwell" aria-labelledby="h-unwell">
+  <div class="wrap">
+    <div class="sec-head"><span class="tag tag-shu">保存版</span><h2 id="h-unwell"><span class="nw">体調がすぐれないときの</span><wbr>相談先</h2><span class="en" lang="en">Help Lines</span></div>
+    <p class="lede">救急車を呼ぶか迷うときや、休日・夜間に困ったときの、大阪府・大阪市の公的な相談窓口です。</p>
+    <div class="unwell">
+      <div class="u-alert"><b>命に関わる緊急時は、迷わず</b><a href="tel:119">119</a></div>
+      <ul class="quick" aria-label="おもな相談先の番号">
+        <li><span>救急車を呼ぶか迷ったら<span class="nw">（24時間）</span><br><small>つながらないとき <a href="tel:0665827119">06-6582-7119</a></small></span><a href="tel:%237119">#7119</a></li>
+        <li><span>夜間の子どもの急病<span class="nw">（19時〜翌8時）</span><br><small>つながらないとき <a href="tel:0667653650">06-6765-3650</a></small></span><a href="tel:%238000">#8000</a></li>
+        <li><span>いま受診できる医療機関<span class="nw">（24時間）</span></span><a href="tel:0666931199">06-6693-1199</a></li>
+      </ul>
+      <p class="quick-note">「#」から始まる番号は、iPhoneやダイヤル回線・IP電話などからかけられないことがあります。そのときは06から始まる番号へ。</p>
+      <ul class="res">
+        <li>
+          <h3>救急安心センターおおさか</h3>
+          <a class="num" href="tel:%237119">#7119</a>
+          <p class="meta">つながらないとき <a href="tel:0665827119">06-6582-7119</a><br><span class="nw">24時間・365日</span></p>
+          <p>急な病気やけがで、救急車を呼ぶか、すぐ病院へ行くか迷うとき。看護師などが、医師の支援のもとで相談に応じます。</p>
+          <p class="meta">出典：<a href="https://www.city.osaka.lg.jp/shobo/page/0000052526.html" target="_blank" rel="noopener">大阪市消防局</a></p>
+        </li>
+        <li>
+          <h3>小児救急電話相談</h3>
+          <a class="num" href="tel:%238000">#8000</a>
+          <p class="meta">つながらないとき <a href="tel:0667653650">06-6765-3650</a><br><span class="nw">毎日19:00〜翌8:00</span></p>
+          <p>夜間に子どもの急な病気やけがで、どうしたらよいか迷うとき。看護職の相談員が相談に応じます。</p>
+          <p class="meta">出典：<a href="https://www.pref.osaka.lg.jp/o100030/iryo/qq/osaka-qq-navi_02.html" target="_blank" rel="noopener">大阪府</a></p>
+        </li>
+        <li>
+          <h3>大阪府<wbr>救急医療<wbr>情報センター</h3>
+          <a class="num" href="tel:0666931199">06-6693-1199</a>
+          <p class="meta"><span class="nw">24時間・365日</span></p>
+          <p>いま診療を受けられる医療機関を、電話で教えてほしいとき。</p>
+          <p class="meta">出典：<a href="https://www.pref.osaka.lg.jp/o100030/iryo/qq/osaka-qq-navi_01.html" target="_blank" rel="noopener">大阪府</a></p>
+        </li>
+        <li>
+          <h3>医療機関を探す</h3>
+          <a class="web" href="https://www.iryou.teikyouseido.mhlw.go.jp/znk-web/juminkanja/S2310/initialize?pref=27" target="_blank" rel="noopener">医療情報ネット（ナビイ）</a>
+          <p class="meta">厚生労働省が運営する検索サイト（大阪府のページ）</p>
+          <p>近くの病院や診療所、歯科、薬局を、場所や診療科から調べたいとき。</p>
+          <p class="meta">出典：<a href="https://www.pref.osaka.lg.jp/o100030/iryo/qq/osaka-qq-navi_01.html" target="_blank" rel="noopener">大阪府</a></p>
+        </li>
+        <li>
+          <h3>休日・夜間<wbr>急病診療所<wbr>（大阪市）</h3>
+          <a class="web" href="https://www.city.osaka.lg.jp/kenko/page/0000371474.html" target="_blank" rel="noopener">休日・夜間急病診療所の案内</a>
+          <p class="meta">診療科と受付時間は公式ページでご確認ください</p>
+          <p>休日や夜間に、急な病気で受診先を探しているとき。受診前に電話で確認してください。</p>
+          <p class="meta">出典：<a href="https://www.city.osaka.lg.jp/kenko/page/0000371474.html" target="_blank" rel="noopener">大阪市健康局</a></p>
+        </li>
+        <li>
+          <h3>大阪救急ナビ</h3>
+          <a class="web" href="https://www.pref.osaka.lg.jp/o100030/iryo/qq/osaka-qq-navi.html" target="_blank" rel="noopener">大阪救急ナビ（大阪府）</a>
+          <p class="meta">救急の相談窓口と医療機関の探し方をまとめた府のページ</p>
+          <p>どの窓口に相談すればよいか、まとめて確かめたいとき。</p>
+          <p class="meta">出典：<a href="https://www.pref.osaka.lg.jp/o100030/iryo/qq/osaka-qq-navi.html" target="_blank" rel="noopener">大阪府</a></p>
+        </li>
+      </ul>
+      <p class="disclaimer">この一覧は一般的な情報で、医療上の助言ではありません。内容は変わることがあるため、受診前に各機関へ確認を。最終確認日：<span class="nw">2026年10月30日</span></p>
+    </div>
+    <button class="copy-link" type="button" aria-live="polite" data-copy="unwell" data-text="大阪の休日・夜間の医療相談先（#7119・#8000ほか）｜OSAKA LIVE">相談先のリンクをコピー</button>
+  </div>
+</section>
+
+<section class="sec" id="calendar" aria-labelledby="h-calendar">
+  <div class="wrap">
+    <div class="sec-head"><h2 id="h-calendar">大阪の<wbr>季節カレンダー</h2><span class="en" lang="en">Seasonal Calendar</span></div>
+    <p class="lede rv">祭りや行事と、季節ごとに気をつけたい体調のことを、月ごとにまとめました。</p>
+    <div class="cal">
+      <article class="season" id="s-spring" aria-labelledby="h-spring">
+        <h3 id="h-spring">春<span class="en">3〜5月</span><span class="now">いまの季節</span></h3>
+        <dl class="ev">
+          <dt>3月</dt><dd>大相撲三月場所<br><small class="muted">毎年3月、エディオンアリーナ大阪（大阪府立体育会館）</small></dd>
+          <dt>4月</dt><dd>造幣局 桜の通り抜け<br><small class="muted">例年4月中旬の約1週間・事前予約制</small></dd>
+          <dt>5月</dt><dd>中之島公園ばら園の見頃<br><small class="muted">例年5月中旬（秋は10月中旬）</small></dd>
+        </dl>
+        <p class="health-memo"><b>体調メモ</b>　スギやヒノキの花粉が飛ぶ季節です。飛散情報を確かめ、つらい症状が続くときは医療機関に相談を。</p>
+      </article>
+      <article class="season" id="s-summer" aria-labelledby="h-summer">
+        <h3 id="h-summer">夏<span class="en">6〜8月</span><span class="now">いまの季節</span></h3>
+        <dl class="ev">
+          <dt>6月</dt><dd>愛染まつり（愛染堂勝鬘院）<br><small class="muted">毎年6月30日〜7月2日。大阪の夏祭りのさきがけとされる</small></dd>
+          <dt>7月</dt><dd>天神祭（大阪天満宮）<br><small class="muted">例年7月24・25日、船渡御や奉納花火</small></dd>
+          <dt>7〜8月</dt><dd>住吉祭（住吉大社）<br><small class="muted">7月の海の日から8月1日まで</small></dd>
+        </dl>
+        <p class="health-memo"><b>体調メモ</b>　6月は平年では、1年でいちばん雨の多い月。8月の平年の日最高気温は33.7℃。蒸し暑い日が続き、熱中症に気をつけたい季節です。具合が悪いときは涼しい場所で休み、水分をとりましょう。意識がおかしい、自分で水が飲めないときは、迷わず119番を。</p>
+      </article>
+      <article class="season" id="s-autumn" aria-labelledby="h-autumn">
+        <h3 id="h-autumn">秋<span class="en">9〜11月</span><span class="now">いまの季節</span></h3>
+        <dl class="ev">
+          <dt>9月</dt><dd>岸和田だんじり祭<span class="nw">（9月祭礼）</span><br><small class="muted">2026年は9月19・20日（岸和田・春木地区）</small></dd>
+          <dt>10月</dt><dd>岸和田だんじり祭<span class="nw">（10月祭礼）</span><br><small class="muted">2026年は10月10・11日（山手地区）</small></dd>
+          <dt>11月</dt><dd>大阪・光の饗宴<br><small class="muted">2026年は11月3日〜翌1月31日</small></dd>
+        </dl>
+        <p class="health-memo"><b>体調メモ</b>　大阪の平年の月平均気温は、10月が19.5℃、11月が13.8℃。ひと月で5℃以上下がります。脱ぎ着しやすい服で調節し、不調が続くときは医療機関に相談を。</p>
+      </article>
+      <article class="season" id="s-winter" aria-labelledby="h-winter">
+        <h3 id="h-winter">冬<span class="en">12〜2月</span><span class="now">いまの季節</span></h3>
+        <dl class="ev">
+          <dt>12月</dt><dd>御堂筋イルミネーション<br><small class="muted">2026年は12月31日まで・約4km</small></dd>
+          <dt>1月</dt><dd>十日えびす（えべっさん）<br><small class="muted">毎年1月9日〜11日、今宮戎神社</small></dd>
+          <dt>2月</dt><dd>大阪マラソン<br><small class="muted">2027年は2月28日（日）開催予定</small></dd>
+        </dl>
+        <p class="health-memo"><b>体調メモ</b>　空気が乾燥し、かぜやインフルエンザなどの感染症が増えやすい時期です。発熱が続くときは医療機関に相談を。</p>
+      </article>
+    </div>
+    <p class="disclaimer">日程は年ごとに変わるため、主催者の公式情報をご確認ください。気温・降水は気象庁の平年値（大阪）です。</p>
+  </div>
+</section>
+
+<section class="sec sec-alt" id="checklist" aria-labelledby="h-checklist">
+  <div class="wrap">
+    <div class="sec-head"><span class="tag tag-shu">保存版</span><h2 id="h-checklist">大阪暮らし<wbr>チェックリスト</h2><span class="en" lang="en">Living Checklist</span></div>
+    <p class="lede">大阪に引っ越してきた人も、長く住んでいる人も。防災・医療・手続きの12項目です（制度は大阪市の場合）。チェックの記録はこの端末の中にだけ保存されます。</p>
+    <p class="check-count" aria-live="polite">12項目中 <b id="check-n">0</b> 項目チェック済み</p>
+    <div class="check-wrap">
+      <div class="check-grp" role="group" aria-labelledby="cg1">
+        <h3 id="cg1">防災</h3>
+        <label><input type="checkbox" id="c1-1"><span>大阪防災アプリを入れている<small>大阪市が提供。大阪府内全域の避難所や防災情報を確認できます</small></span></label>
+        <label><input type="checkbox" id="c1-2"><span>自宅周辺の水害ハザードマップを見た<small>大阪市は24区それぞれの水害<span class="nw">ハザードマップ</span>を公開しています</small></span></label>
+        <label><input type="checkbox" id="c1-3"><span>近くの避難所の場所を確かめた<small>大阪防災アプリの地図でも、避難所を確認できます</small></span></label>
+        <label><input type="checkbox" id="c1-4"><span>水や食料などの備えを用意した<small>大阪防災アプリには、備蓄品のチェックリストもあります</small></span></label>
+      </div>
+      <div class="check-grp" role="group" aria-labelledby="cg2">
+        <h3 id="cg2">医療・健康</h3>
+        <label><input type="checkbox" id="c2-1"><span>#7119と#8000をスマホの連絡先に登録した<small>救急車を呼ぶか迷うときと、子どもの夜間の電話相談です</small></span></label>
+        <label><input type="checkbox" id="c2-2"><span>相談できるかかりつけ医がいる<small>健康のことを相談でき、必要なときは専門医を紹介してくれる身近な医師</small></span></label>
+        <label><input type="checkbox" id="c2-3"><span>特定健診の受け方を確かめた<small>大阪市国保の40〜74歳は無料。受診券を持って受診します</small></span></label>
+        <label><input type="checkbox" id="c2-4"><span>がん検診の対象と費用を確かめた<small>大阪市は年齢などで対象が決まり、費用は無料〜1,500円です</small></span></label>
+      </div>
+      <div class="check-grp" role="group" aria-labelledby="cg3">
+        <h3 id="cg3">暮らしの手続き</h3>
+        <label><input type="checkbox" id="c3-1"><span>転入届を14日以内に出した<small>大阪市は区役所などの窓口で。引っ越し前や郵送では出せません</small></span></label>
+        <label><input type="checkbox" id="c3-2"><span>ごみの4分類と収集日を確かめた<small>収集日は地域で異なります。<span class="nw">「さんあ～る」</span>や収集マップで確認を</small></span></label>
+        <label><input type="checkbox" id="c3-3"><span>粗大ごみの出し方を確かめた<small>大阪市では30cmを超えるものなどが対象。事前予約制で有料です</small></span></label>
+        <label><input type="checkbox" id="c3-5"><span>自転車保険に入っているか確かめた<small>大阪府では2016年7月から、自転車利用者の保険加入が義務です</small></span></label>
+      </div>
+    </div>
+    <p class="disclaimer">出典：<a href="https://www.city.osaka.lg.jp/kenko/page/0000008503.html" target="_blank" rel="noopener">大阪市（がん検診）</a>・<a href="https://www.city.osaka.lg.jp/shimin/page/0000369822.html" target="_blank" rel="noopener">大阪市（転入届）</a>・<a href="https://www.city.osaka.lg.jp/kankyo/page/0000009337.html" target="_blank" rel="noopener">大阪市（ごみ）</a>・<a href="https://www.city.osaka.lg.jp/kikikanrishitsu/page/0000345020.html" target="_blank" rel="noopener">大阪市（大阪防災アプリ）</a>・<a href="https://www.pref.osaka.lg.jp/o130080/dorokankyo/osakajitensha/jitensya-hoken.html" target="_blank" rel="noopener">大阪府（自転車保険）</a>　最終確認日：<span class="nw">2026年10月30日</span>。制度は変わることがあるため、公式ページでご確認ください。</p>
+    <button class="copy-link" type="button" aria-live="polite" data-copy="checklist" data-text="大阪暮らしチェックリスト（防災・医療・手続きの12項目）｜OSAKA LIVE">チェックリストのリンクをコピー</button>
+  </div>
+</section>
+
+<section class="sec" id="themes" aria-labelledby="h-themes">
+  <div class="wrap">
+    <div class="sec-head"><h2 id="h-themes">5つのテーマ</h2><span class="en" lang="en">Five Themes</span></div>
+    <p class="lede rv">暮らし、健康、美容、ひと、ガイド。5つの柱で大阪の毎日を取り上げます。</p>
+
+    <article class="theme rv" id="living" aria-labelledby="h-living">
+      <p class="theme-no" aria-hidden="true">01</p>
+      <div class="theme-txt">
+        <h3 id="h-living">大阪の暮らし<span class="en" lang="en">Living in Osaka</span></h3>
+        <p>駅前の喫茶店、自転車で通うスーパー、近所の公園。大阪の街で毎日をどう過ごすかを、住む人の目線で取り上げます。部屋探しや移動など、暮らしの土台になる話題から始めます。</p>
+        <p class="series-cap">これから始まる連載</p>
+        <ul class="series">
+          <li>大阪で一人暮らしを始める前に</li>
+          <li>大阪の商店街さんぽ</li>
+          <li>水都大阪の川べりを歩く</li>
+        </ul>
+      </div>
+      <figure><img src="https://images.unsplash.com/photo-1646536590706-42fc527f35c9?auto=format&fit=crop&q=55&ar=4:3&crop=entropy&w=600" srcset="https://images.unsplash.com/photo-1646536590706-42fc527f35c9?auto=format&fit=crop&q=55&ar=4:3&crop=entropy&w=400 400w, https://images.unsplash.com/photo-1646536590706-42fc527f35c9?auto=format&fit=crop&q=55&ar=4:3&crop=entropy&w=600 600w, https://images.unsplash.com/photo-1646536590706-42fc527f35c9?auto=format&fit=crop&q=55&ar=4:3&crop=entropy&w=800 800w" sizes="(min-width:960px) 400px, calc(100vw - 32px)" width="1200" height="900" alt="自転車が並ぶ大阪の路地と、一匹の猫" loading="lazy" decoding="async"><figcaption>大阪の路地で</figcaption></figure>
+    </article>
+
+    <article class="theme flip rv" id="health" aria-labelledby="h-health">
+      <p class="theme-no" aria-hidden="true">02</p>
+      <div class="theme-txt">
+        <h3 id="h-health">健康・医療<span class="en" lang="en">Health &amp; Medical</span></h3>
+        <p>かかりつけ医の見つけ方や、休日・夜間に困ったときの相談先など、医療の基本情報を扱います。内容は公的機関の情報をもとに確認し、定期的に見直します。</p>
+        <p class="notice">掲載しているのは一般的な健康情報です。診断や治療については、医療機関にご相談ください。</p>
+        <p class="series-cap">これから始まる連載</p>
+        <ul class="series">
+          <li>大阪でかかりつけ医を見つけるには</li>
+          <li>大阪市のがん検診・特定健診ガイド</li>
+          <li>大阪の休日・夜間の医療相談ガイド</li>
+        </ul>
+      </div>
+      <figure><img src="https://images.unsplash.com/photo-1686540576457-e73427913263?auto=format&fit=crop&q=55&ar=4:3&crop=entropy&w=600" srcset="https://images.unsplash.com/photo-1686540576457-e73427913263?auto=format&fit=crop&q=55&ar=4:3&crop=entropy&w=400 400w, https://images.unsplash.com/photo-1686540576457-e73427913263?auto=format&fit=crop&q=55&ar=4:3&crop=entropy&w=600 600w, https://images.unsplash.com/photo-1686540576457-e73427913263?auto=format&fit=crop&q=55&ar=4:3&crop=entropy&w=800 800w" sizes="(min-width:960px) 400px, calc(100vw - 32px)" width="1200" height="900" alt="中之島公園の橋と、川沿いの緑" loading="lazy" decoding="async"><figcaption>中之島公園ばら園の橋（北区）</figcaption></figure>
+    </article>
+
+    <article class="theme wide rv" id="beauty" aria-labelledby="h-beauty">
+      <p class="theme-no" aria-hidden="true">03</p>
+      <figure><img src="https://images.unsplash.com/photo-1748543668676-ea8241cb3886?auto=format&fit=crop&q=55&ar=21:9&crop=entropy&w=600" srcset="https://images.unsplash.com/photo-1748543668676-ea8241cb3886?auto=format&fit=crop&q=55&ar=21:9&crop=entropy&w=400 400w, https://images.unsplash.com/photo-1748543668676-ea8241cb3886?auto=format&fit=crop&q=55&ar=21:9&crop=entropy&w=600 600w, https://images.unsplash.com/photo-1748543668676-ea8241cb3886?auto=format&fit=crop&q=55&ar=21:9&crop=entropy&w=800 800w, https://images.unsplash.com/photo-1748543668676-ea8241cb3886?auto=format&fit=crop&q=55&ar=21:9&crop=entropy&w=1200 1200w" sizes="(min-width:960px) 900px, calc(100vw - 32px)" width="6300" height="2700" alt="スキンケアのテクスチャーと緑の葉" loading="lazy" decoding="async"><figcaption>スキンケアのテクスチャー（イメージ）</figcaption></figure>
+      <div class="theme-txt">
+        <h3 id="h-beauty">美容・<wbr>ウェルネス<span class="en" lang="en">Beauty &amp; Wellness</span></h3>
+        <p>スキンケア、睡眠、食事、からだを動かす習慣など、毎日のセルフケアの基本を扱います。流行や広告の言葉に流されないよう、成分表示や情報の読み方も一緒に考えます。</p>
+        <p class="series-cap">これから始まる連載</p>
+        <ul class="series">
+          <li>化粧品の成分表示の読み方</li>
+          <li>美容医療の前に確かめたい、契約と相談先</li>
+          <li>大阪の気候に合わせた、季節のスキンケア</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="theme rv" id="culture" aria-labelledby="h-culture">
+      <p class="theme-no" aria-hidden="true">04</p>
+      <div class="theme-txt">
+        <h3 id="h-culture">ひと・<wbr>トレンド・<wbr>カルチャー<span class="en" lang="en">People &amp; Culture</span></h3>
+        <p>だしや粉もん、銭湯、ミュージアム。大阪の暮らしに根づく文化を、店を営む人やつくる人の話とあわせて紹介します。</p>
+        <p class="series-cap">これから始まる連載</p>
+        <ul class="series">
+          <li>大阪のだしと粉もんの話</li>
+          <li>大阪の銭湯をめぐる</li>
+          <li>中之島のミュージアムめぐり</li>
+        </ul>
+      </div>
+      <figure><img src="https://images.unsplash.com/photo-1690210684306-521cdb9990a9?auto=format&fit=crop&q=55&ar=4:3&crop=entropy&w=600" srcset="https://images.unsplash.com/photo-1690210684306-521cdb9990a9?auto=format&fit=crop&q=55&ar=4:3&crop=entropy&w=400 400w, https://images.unsplash.com/photo-1690210684306-521cdb9990a9?auto=format&fit=crop&q=55&ar=4:3&crop=entropy&w=600 600w, https://images.unsplash.com/photo-1690210684306-521cdb9990a9?auto=format&fit=crop&q=55&ar=4:3&crop=entropy&w=800 800w" sizes="(min-width:960px) 400px, calc(100vw - 32px)" width="1200" height="900" alt="夜の天神祭、天神橋周辺のにぎわい" loading="lazy" decoding="async"><figcaption>天神祭の夜（北区）</figcaption></figure>
+    </article>
+
+    <article class="theme rv" id="guide" aria-labelledby="h-guide">
+      <p class="theme-no" aria-hidden="true">05</p>
+      <div class="theme-txt">
+        <h3 id="h-guide">暮らしのガイド<span class="en" lang="en">Living Guide</span></h3>
+        <p>ごみの出し方、防災の備え、引っ越しの手続きなど、大阪で暮らすための実用情報をまとめます。制度は変わることがあるため、自治体の公式情報へのリンクを添えます。</p>
+      </div>
+      <div>
+        <p class="series-cap first">これから始まる連載</p>
+        <ul class="series">
+          <li>大阪市のごみ分別と出し方</li>
+          <li>大阪で引っ越したときの手続き一覧</li>
+          <li>南海トラフ地震に備える大阪の防災</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+<section class="sec sec-alt" id="policy" aria-labelledby="h-policy">
+  <div class="wrap">
+    <div class="sec-head"><h2 id="h-policy">編集方針・<wbr>運営者情報</h2><span class="en" lang="en">Editorial Policy</span></div>
+    <p class="lede">OSAKA LIVEがどのように記事をつくり、情報を扱っているかをまとめています。</p>
+    <div class="policy">
+      <div><h3>運営者情報</h3><p>サイト名：OSAKA LIVE（オオサカライブ）<br>編集：OSAKA LIVE 編集部<br>運営者：【要記入】<br>編集責任者：【要記入】<br>連絡先：【要記入】</p><p>運営者は、OSAKA LIVEのほかにも事業を営んでいます。その事業に関わる内容を扱うときは、「広告・PR表記について」にしたがって表示します。</p><p>記事内容の誤りのご指摘も、上記の連絡先で受け付けます。</p></div>
+      <div><h3>編集方針</h3><p>記事は、国・大阪府・大阪市などの公的機関や専門団体が公開する一次情報を確認して作成し、参照した情報源を明記します。掲載後も定期的に内容を見直し、誤りがあれば訂正して更新日を記録します。健康・医療の記事には、執筆者と内容を確認した者の氏名・資格・確認の範囲を、記事ごとに記載します。</p></div>
+      <div><h3>健康・医療情報の取り扱い</h3><p>健康・医療・美容に関する記事は一般的な情報の提供を目的としており、診断や治療に代わるものではなく、特定の商品やサービスをすすめるものでもありません。症状や治療については、医療機関や医師・薬剤師にご相談ください。</p></div>
+      <div><h3>広告・PR表記について</h3><p>当サイトでは現在、広告や広告を目的とした記事を掲載していません。今後、運営者または運営者と関係のある事業者の商品・サービスに触れる場合は、その記事やリンクのすぐ近くに「PR」と分かりやすく表示し、運営者との関係もあわせて記載します。健康・医療の記事の本文中で、特定の商品をすすめたり、商品ページへ案内したりすることはありません。記事のテーマ選びや内容は、編集方針にもとづいて編集部が判断します。</p></div>
+      <div><h3>写真について</h3><p class="ragged">掲載写真は Unsplash ライセンスの写真を使用しています。撮影：<span class="nw">Ryo Harianto</span>、<span class="nw">Karen Chew</span>、<span class="nw">Mingeon Go</span>、<span class="nw">ibnu ihza</span>、<span class="nw">Steven Marcellino</span>、<span class="nw">Paul Cuoco</span>、<span class="nw">Alec Brunelle</span>、<span class="nw">explorecortex</span>、<span class="nw">Kent Chin</span>、<span class="nw">Sebastian Kurpiel</span>、<span class="nw">D Konishi</span><span class="nw">（敬称略）</span></p></div>
+      <div><h3>プライバシー・外部送信について</h3><p>現在、アクセス解析ツールは使用していません。文字や写真の表示のため、Google Fonts と Unsplash のサーバーに接続します。チェックリストの記録はこの端末の中にだけ保存され、外部には送信されません。</p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="ft">
+  <div class="seigaiha ft-wave" aria-hidden="true"></div>
+  <div class="wrap">
+    <a class="logo" href="#top"><b>OSAKA LIVE</b></a>
+    <p class="muted m0">大阪の暮らし・健康・美容・カルチャーを届けるWebマガジン。</p>
+    <div class="ft-row">
+      <p class="m0">最終更新日：<time datetime="2026-10-31">2026年10月31日</time></p>
+      <div class="ft-actions">
+        <button type="button" id="share" aria-live="polite">このページを共有</button>
+        <a class="totop" href="#top">ページ上部へ</a>
+      </div>
+    </div>
+    <p class="muted m0"><small>© 2026 OSAKA LIVE</small></p>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const $ = (s) => document.querySelector(s), $$ = (s) => [...document.querySelectorAll(s)];
+
+  // Season calendar: current season first and full width, the rest follow in order.
+  const seasons = ['winter', 'spring', 'summer', 'autumn'];
+  const now = Math.floor((new Date().getMonth() + 1) % 12 / 3);
+  seasons.forEach((s, k) => {
+    const el = $('#s-' + s);
+    if (!el) return;
+    el.style.order = (k - now + 4) % 4;
+    el.classList.toggle('is-now', k === now);
+  });
+  // In the current season, tag this month and dim months already past.
+  const month = new Date().getMonth() + 1;
+  $$('.season.is-now .ev dt').forEach((dt) => {
+    if (dt.textContent.includes('〜')) return; // month ranges (7〜8月) get no tag
+    const d = (month - parseInt(dt.textContent, 10) + 12) % 12;
+    if (d === 0) dt.insertAdjacentHTML('beforeend', '<span class="tag">今月</span>');
+    else if (d === 11) dt.insertAdjacentHTML('beforeend', '<span class="tag">もうすぐ</span>');
+    else if (d < 3) {
+      dt.classList.add('past'); dt.nextElementSibling.classList.add('past');
+      dt.insertAdjacentHTML('beforeend', '<span class="tag">終了</span>');
+    }
+  });
+  // Cover line 03 names this month's event (next month's from the 15th on).
+  const target = new Date().getDate() >= 15 ? month % 12 + 1 : month;
+  const row = $$('.ev dt').find((dt) => !dt.textContent.includes('〜') && parseInt(dt.textContent, 10) === target);
+  const cl = $('.coverlines a[href="#calendar"] small');
+  if (row && cl) cl.textContent = `${target}月は${row.nextElementSibling.firstChild.textContent.trim()}ほか。季節の体調メモも`;
+
+
+  // Scroll reveal (content stays visible if this never runs).
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((es) => es.forEach((e) => {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    }), { rootMargin: '0px 0px -8% 0px' });
+    $$('.rv').forEach((el) => io.observe(el));
+    new IntersectionObserver(([e]) => $('.hd').classList.toggle('on-cover', e.isIntersecting)).observe($('.masthead'));
+  } else $$('.rv').forEach((el) => el.classList.add('in'));
+
+  // Contents dialog (one list in the page, cloned into the dialog).
+  const d = $('#toc');
+  $('#toc-nav').append($('#contents .contents').cloneNode(true));
+  if (typeof d.showModal !== 'function') $('#toc-open').hidden = true;
+  $('#toc-open').addEventListener('click', () => d.showModal());
+  $('#toc-close').addEventListener('click', () => d.close());
+  d.addEventListener('click', (e) => { if (e.target === d || e.target.closest('a')) d.close(); });
+
+  // Checklist, remembered on this device only.
+  const KEY = 'osakalive:checklist';
+  let saved = {};
+  try { saved = JSON.parse(localStorage.getItem(KEY)) || {}; } catch {}
+  const boxes = $$('#checklist input[type=checkbox]');
+  const count = () => { $('#check-n').textContent = boxes.filter((b) => b.checked).length; };
+  boxes.forEach((b) => {
+    b.checked = !!saved[b.id];
+    b.addEventListener('change', () => {
+      saved[b.id] = b.checked;
+      try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch {}
+      count();
+    });
+  });
+  count();
+
+  // Copy a section link / share the page.
+  const pageUrl = location.origin + location.pathname;
+  const copy = async (btn, url) => {
+    const label = btn.dataset.label ??= btn.textContent;
+    try { await navigator.clipboard.writeText(url); btn.textContent = 'リンクをコピーしました'; }
+    catch { btn.textContent = url.split(String.fromCharCode(10)).pop(); return; }
+    setTimeout(() => { btn.textContent = label; }, 2500);
+  };
+  $$('[data-copy]').forEach((b) => b.addEventListener('click', () => copy(b, `${b.dataset.text}\n${pageUrl}#${b.dataset.copy}`)));
+  $('#share').addEventListener('click', async (e) => {
+    const btn = e.currentTarget;
+    const labelled = `OSAKA LIVE｜大阪で、暮らす。\n${pageUrl}`;
+    if (!navigator.share) return copy(btn, labelled);
+    try { await navigator.share({ title: document.title, text: '大阪で、暮らす。住む人の目線で、出典を明記して書くWebマガジン。', url: pageUrl }); }
+    catch (err) { if (err.name !== 'AbortError') copy(btn, labelled); }
+  });
+  window.__ol = 1;
+})();
+</script>
+</body>
+</html>
